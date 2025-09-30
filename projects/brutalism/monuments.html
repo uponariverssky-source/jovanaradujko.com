@@ -1,95 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monuments – Jovana Radujko</title>
-    <style>
-        body {
-            background: white;
-            color: black;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <title>Monuments – Jovana Radujko</title>
+  <style>
+    /* Load fonts */
+    @font-face {
+      font-family: "MyriadPro-Cond";
+      src: url("../../assets/MyriadPro-Cond.woff2") format("woff2"),
+           url("../../assets/MyriadPro-Cond.woff") format("woff");
+    }
 
-        /* Menu styles */
-        nav {
-            text-align: center;
-            margin-top: 40px;
-        }
+    @font-face {
+      font-family: "MyriadPro-BoldCond";
+      src: url("../../assets/MyriadPro-BoldCond.woff2") format("woff2"),
+           url("../../assets/MyriadPro-BoldCond.woff") format("woff");
+    }
 
-        nav a {
-            text-decoration: none;
-            color: black;
-            margin: 0 15px;
-        }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      font-family: "MyriadPro-Cond", sans-serif;
+      color: #000;
+    }
 
-        .primary-menu {
-            font-size: 18px;
-        }
+    /* Primary menu */
+    .primary-menu {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-top: 36px;
+      margin-left: 40px; /* aligned with image left edge */
+    }
 
-        .secondary-menu, .third-menu {
-            font-size: 13px;
-        }
+    .primary-menu .name {
+      font-family: "MyriadPro-BoldCond", sans-serif;
+      margin-right: 36px;
+    }
 
-        .third-menu {
-            margin-top: 20px;
-        }
+    .primary-menu a {
+      text-decoration: none;
+      color: black;
+      margin-right: 26px;
+    }
 
-        .third-menu a.active {
-            font-weight: bold;
-            text-decoration: underline;
-        }
+    .primary-menu a:active,
+    .primary-menu a:focus {
+      font-weight: bold;
+      text-decoration: underline;
+    }
 
-        /* Image grid */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+    /* Secondary menu */
+    .secondary-menu {
+      font-size: 13px;
+      margin-top: 36px;
+      margin-left: 40px;
+    }
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border: 1px solid #ddd;
-        }
-    </style>
+    .secondary-menu a {
+      text-decoration: none;
+      color: black;
+      margin-right: 26px;
+    }
+
+    /* Third menu */
+    .third-menu {
+      font-size: 13px;
+      margin-top: 36px;
+      margin-left: 40px;
+    }
+
+    .third-menu a {
+      text-decoration: none;
+      color: black;
+      margin-right: 26px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+
+    .gallery-item {
+      margin-right: 62px;
+      margin-bottom: 36px;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 530px;
+      max-height: 700px;
+    }
+
+    .caption {
+      font-size: 13px;
+      margin-top: 13px;
+      text-align: left;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 18px;
+      font-family: "MyriadPro-Cond", sans-serif;
+      background-color: #fff;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Primary Menu -->
-    <nav class="primary-menu">
-        <a href="/about.html">about</a>
-        <a href="/projects.html">projects</a>
-        <a href="/contact.html">contact</a>
-    </nav>
+  <!-- Primary Menu -->
+  <nav class="primary-menu">
+    <span class="name">jovana radujko</span>
+    <a href="#">about</a>
+    <a href="#">projects</a>
+    <a href="#">contact</a>
+  </nav>
 
-    <!-- Secondary Menu -->
-    <nav class="secondary-menu">
-        <a href="/projects/brutalism.html">all</a>
-        <a href="/projects/brutalism.html">brutalism</a>
-        <a href="/projects/maps.html">maps</a>
-        <a href="/projects/genex360.html">genex 360</a>
-        <a href="/projects/churches.html">churches</a>
-        <a href="/projects/collabs.html">collabs</a>
-    </nav>
+  <!-- Secondary Menu -->
+  <nav class="secondary-menu">
+    <a href="#">brutalism</a>
+    <a href="#">maps</a>
+    <a href="#">genex 360</a>
+    <a href="#">churches</a>
+    <a href="#">collabs</a>
+  </nav>
 
-    <!-- Third Menu -->
-    <nav class="third-menu">
-        <a href="/projects/brutalism/monuments.html" class="active">monuments</a>
-        <a href="/projects/brutalism/nonresidential.html">non-residential</a>
-        <a href="/projects/brutalism/residential.html">residential</a>
-    </nav>
+  <!-- Third Menu -->
+  <nav class="third-menu">
+    <a href="#">monuments</a>
+    <a href="#">non-residential buildings</a>
+    <a href="#">residential buildings</a>
+  </nav>
 
   <!-- Gallery -->
   <div class="gallery">
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
+    <div class="gallery-item">
+      <img src="../../assets/images/projects/brutalism/monuments/example1.jpg" alt="Example 1">
+      <div class="caption">Caption for image 1</div>
+    </div>
+
+    <div class="gallery-item">
+  <img src="../../assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
         alt="Barutana Monument, Barutana, Montenegro">
       <div class="caption">Barutana Monument, Barutana, Montenegro</div>
     </div>
@@ -160,6 +220,12 @@
       <div class="caption">Sutjeska Monument, Tjentište, Bosnia & Herzegovina</div>
     </div>
   </div>
+
+
+  <!-- Footer -->
+  <footer>
+    jovana radujko | all rights reserved ©
+  </footer>
 
 </body>
 </html>
