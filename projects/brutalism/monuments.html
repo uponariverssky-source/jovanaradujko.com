@@ -2,144 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Monuments – Jovana Radujko</title>
+  <title>Monuments</title>
   <style>
     /* Load fonts */
     @font-face {
-      font-family: "MyriadPro-Cond";
-      src: url("../../assets/MyriadPro-Cond.woff2") format("woff2"),
-           url("../../assets/MyriadPro-Cond.woff") format("woff");
+      font-family: 'MyriadProCond';
+      src: url('../../assets/MyriadPro-Cond.woff2') format('woff2'),
+           url('../../assets/MyriadPro-Cond.woff') format('woff');
     }
-
     @font-face {
-      font-family: "MyriadPro-BoldCond";
-      src: url("../../assets/MyriadPro-BoldCond.woff2") format("woff2"),
-           url("../../assets/MyriadPro-BoldCond.woff") format("woff");
+      font-family: 'MyriadProBoldCond';
+      src: url('../../assets/MyriadPro-BoldCond.woff2') format('woff2'),
+           url('../../assets/MyriadPro-BoldCond.woff') format('woff');
     }
 
     body {
+      background: white;
+      font-family: 'MyriadProCond', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fff;
-      font-family: "MyriadPro-Cond", sans-serif;
-      color: #000;
+      padding: 36px;
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Primary menu */
     .primary-menu {
-      display: flex;
-      align-items: center;
       font-size: 18px;
-      margin-top: 36px;
-      margin-left: 40px; /* aligned with image left edge */
+      margin-bottom: 36px;
     }
-
     .primary-menu .name {
-      font-family: "MyriadPro-BoldCond", sans-serif;
+      font-family: 'MyriadProBoldCond', sans-serif;
       margin-right: 36px;
     }
-
     .primary-menu a {
+      margin-right: 36px;
       text-decoration: none;
       color: black;
-      margin-right: 26px;
     }
-
-    .primary-menu a:active,
-    .primary-menu a:focus {
+    .primary-menu a:active {
       font-weight: bold;
       text-decoration: underline;
     }
 
     /* Secondary menu */
     .secondary-menu {
-      font-size: 13px;
-      margin-top: 36px;
-      margin-left: 40px;
+      font-size: 14px;
+      margin-bottom: 36px;
     }
-
     .secondary-menu a {
+      margin-right: 26px;
       text-decoration: none;
       color: black;
-      margin-right: 26px;
     }
 
     /* Third menu */
     .third-menu {
-      font-size: 13px;
-      margin-top: 36px;
-      margin-left: 40px;
+      font-size: 14px;
+      margin-bottom: 36px;
     }
-
     .third-menu a {
+      margin-right: 26px;
       text-decoration: none;
       color: black;
-      margin-right: 26px;
     }
 
     /* Gallery */
     .gallery {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      margin-top: 60px;
+      gap: 60px;
+      justify-content: flex-start;
     }
-
-    .gallery-item {
-      margin-right: 62px;
-      margin-bottom: 36px;
+    .item {
+      width: 530px;
     }
-
-    .gallery-item img {
-      display: block;
-      width: auto;
+    .item img {
+      width: 530px;
       height: auto;
-      max-width: 530px;
-      max-height: 700px;
+      display: block;
     }
-
     .caption {
-      font-size: 13px;
       margin-top: 13px;
+      font-size: 14px;
       text-align: left;
     }
 
     /* Footer */
     footer {
-      margin-top: 60px;
-      padding: 20px 0;
-      text-align: center;
+      margin-top: 80px;
       font-size: 18px;
-      font-family: "MyriadPro-Cond", sans-serif;
-      background-color: #fff;
+      text-align: center;
+      font-family: 'MyriadProCond', sans-serif;
     }
   </style>
 </head>
 <body>
 
-  <!-- Primary Menu -->
-  <nav class="primary-menu">
+  <!-- Primary menu -->
+  <div class="primary-menu">
     <span class="name">jovana radujko</span>
-    <a href="#">about</a>
-    <a href="#">projects</a>
-    <a href="#">contact</a>
-  </nav>
+    <a href="../../about.html">about</a>
+    <a href="../../projects.html">projects</a>
+    <a href="../../contact.html">contact</a>
+  </div>
 
-  <!-- Secondary Menu -->
-  <nav class="secondary-menu">
-    <a href="#">brutalism</a>
-    <a href="#">maps</a>
-    <a href="#">genex 360</a>
-    <a href="#">churches</a>
-    <a href="#">collabs</a>
-  </nav>
+  <!-- Secondary menu -->
+  <div class="secondary-menu">
+    <a href="../brutalism.html">brutalism</a>
+    <a href="../maps.html">maps</a>
+    <a href="../genex360.html">genex 360</a>
+    <a href="../churches.html">churches</a>
+    <a href="../collabs.html">collabs</a>
+  </div>
 
-  <!-- Third Menu -->
-  <nav class="third-menu">
-    <a href="#">monuments</a>
-    <a href="#">non-residential buildings</a>
-    <a href="#">residential buildings</a>
-  </nav>
+  <!-- Third menu -->
+  <div class="third-menu">
+    <a href="monuments.html">monuments</a>
+    <a href="nonresidential.html">non-residential buildings</a>
+    <a href="residential.html">residential buildings</a>
+  </div>
 
   <!-- Gallery -->
   <div class="gallery">
