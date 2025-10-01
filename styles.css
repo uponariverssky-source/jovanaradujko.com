@@ -1,0 +1,282 @@
+/* FONTS - MyriadPro Condensed */
+/* You'll need to add MyriadPro font files to your project */
+/* For now, using a fallback system font. Replace with @font-face when you have the font files */
+@font-face {
+    font-family: 'MyriadPro-Condensed';
+    src: url('fonts/MyriadPro-Condensed.woff2') format('woff2'),
+         url('fonts/MyriadPro-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Condensed';
+    src: url('fonts/MyriadPro-CondensedBold.woff2') format('woff2'),
+         url('fonts/MyriadPro-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MyriadPro-Condensed', 'Arial Narrow', Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MAIN PAGE - VIDEO BACKGROUND */
+.main-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-page .main-nav {
+    color: #FFFFFF;
+}
+
+.main-page .main-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.main-page .main-nav .nav-link:hover {
+    color: #CCCCCC;
+}
+
+/* NAVIGATION - Main Menu */
+.main-nav {
+    display: flex;
+    gap: 36px;
+    padding-top: 36px;
+    padding-left: 36px;
+    font-size: 18px;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-bold {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #808080;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* SECONDARY MENU (Projects categories) */
+.secondary-nav {
+    display: flex;
+    gap: 28px;
+    padding-left: 36px;
+    margin-top: 36px;
+    font-size: 14px;
+}
+
+.secondary-nav .nav-link:hover {
+    color: #808080;
+}
+
+.secondary-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* TERTIARY MENU (Brutalism subcategories) */
+.tertiary-nav {
+    display: flex;
+    gap: 28px;
+    padding-left: 36px;
+    margin-top: 28px;
+    font-size: 14px;
+}
+
+.tertiary-nav .nav-link:hover {
+    color: #808080;
+}
+
+.tertiary-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* ABOUT PAGE */
+.about-container {
+    display: flex;
+    padding-left: 36px;
+    margin-top: 36px;
+    gap: 60px;
+}
+
+.about-photo {
+    width: 400px;
+    height: auto;
+}
+
+.about-text {
+    width: 400px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    padding-left: 36px;
+    margin-top: 36px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-container a {
+    text-decoration: underline;
+}
+
+.contact-container a:hover {
+    color: #808080;
+}
+
+/* PROJECTS GRID */
+.projects-container {
+    padding-left: 36px;
+    margin-top: 36px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 60px 60px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.project-item {
+    cursor: pointer;
+}
+
+.project-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-image {
+    opacity: 0.8;
+}
+
+.project-caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 36px;
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 90%;
+}
+
+.lightbox-image {
+    width: 530px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.lightbox-description {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.lightbox-description h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lightbox-description p {
+    margin-bottom: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.lightbox-close:hover {
+    color: #808080;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #000000;
+}
+
+.footer-signature {
+    height: 30px;
+    width: auto;
+}
+
+/* Ensure content doesn't get hidden behind fixed footer */
+body {
+    padding-bottom: 50px;
+}
