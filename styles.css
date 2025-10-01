@@ -61,13 +61,13 @@ a {
 }
 
 .main-page .main-nav .nav-link:hover {
-    color: #CCCCCC;
+    color: #202020;
 }
 
 /* NAVIGATION - Main Menu */
 .main-nav {
     display: flex;
-    gap: 36px;
+    gap: 27px;
     padding-top: 36px;
     padding-left: 36px;
     font-size: 18px;
