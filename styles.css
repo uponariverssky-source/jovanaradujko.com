@@ -69,8 +69,10 @@ a {
     display: flex;
     gap: 27px;
     padding-top: 36px;
-    padding-left: 36px;
     font-size: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -660px;
 }
 
 .nav-link {
