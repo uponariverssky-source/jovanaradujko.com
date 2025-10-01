@@ -3,16 +3,16 @@
 /* For now, using a fallback system font. Replace with @font-face when you have the font files */
 @font-face {
     font-family: 'MyriadPro-Condensed';
-    src: url('fonts/MyriadPro-Condensed.woff2') format('woff2'),
-         url('fonts/MyriadPro-Condensed.woff') format('woff');
+    src: url('assets/MyriadPro-Cond.woff2') format('woff2'),
+         url('assets/MyriadPro-Cond.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyriadPro-Condensed';
-    src: url('fonts/MyriadPro-CondensedBold.woff2') format('woff2'),
-         url('fonts/MyriadPro-CondensedBold.woff') format('woff');
+    src: url('assets/MyriadPro-BoldCond.woff2') format('woff2'),
+         url('assets/MyriadPro-BoldCond.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
