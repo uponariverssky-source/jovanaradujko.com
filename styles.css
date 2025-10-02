@@ -73,6 +73,7 @@ a {
     position: absolute;
     left: 50%;
     margin-left: -660px;
+    top: 0;
 }
 
 .nav-link {
