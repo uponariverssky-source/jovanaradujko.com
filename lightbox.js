@@ -8,17 +8,17 @@ const projects = [
         description: 'Detailed description of the project goes here. A few lines about the building, architectural style, or inspiration.'
     },
     {
-        image: 'assets/images/projects/project2-full.jpg',
-        title: 'Project Title 2',
-        location: 'Novi Sad, Serbia',
-        medium: 'Pencil and watercolor',
+        image: 'assets/images/projects/brutalism/monuments/Bratunac_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg',
+        title: 'Bratunac Monument',
+        location: 'Bratunac, Bosnia&Herzegovina',
+        medium: 'Ink on paper, colored digitally in Photoshop',
         description: 'Another description with details about this particular drawing and what makes it special.'
     },
     {
-        image: 'assets/images/projects/project3-full.jpg',
-        title: 'Project Title 3',
-        location: 'Zagreb, Croatia',
-        medium: 'Digital illustration',
+        image: 'assets/images/projects/brutalism/monuments/Bubanj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg',
+        title: 'Bubanj Monument',
+        location: 'Niš, Serbia',
+        medium: 'Ink on paper, colored digitally in Photoshop',
         description: 'More information about this architectural drawing and its significance.'
     }
     // Add more projects as needed
