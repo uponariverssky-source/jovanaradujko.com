@@ -61,7 +61,7 @@ a {
 }
 
 .main-page .main-nav .nav-link:hover {
-    color: #CCCCCC;
+    color: #202020;
 }
 
 /* NAVIGATION - Main Menu */
@@ -84,7 +84,7 @@ a {
 }
 
 .nav-link:hover {
-    color: #808080;
+    color: #D3D3D3;
 }
 
 .nav-link.active {
@@ -101,7 +101,7 @@ a {
 }
 
 .secondary-nav .nav-link:hover {
-    color: #808080;
+    color: #D3D3D3;
 }
 
 .secondary-nav .nav-link.active {
@@ -118,7 +118,7 @@ a {
 }
 
 .tertiary-nav .nav-link:hover {
-    color: #808080;
+    color: #D3D3D3;
 }
 
 .tertiary-nav .nav-link.active {
