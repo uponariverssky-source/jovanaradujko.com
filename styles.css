@@ -95,7 +95,7 @@ a {
 .secondary-nav {
     display: flex;
     gap: 28px;
-    padding-left: 36px;
+    margin-left: calc(50% - 660px);
     margin-top: 36px;
     font-size: 14px;
 }
@@ -112,13 +112,13 @@ a {
 .tertiary-nav {
     display: flex;
     gap: 28px;
-    padding-left: 36px;
+    margin-left: calc(50% - 660px);
     margin-top: 28px;
     font-size: 14px;
 }
 
 .tertiary-nav .nav-link:hover {
-    color: #D3D3D3;
+    color: #202020;
 }
 
 .tertiary-nav .nav-link.active {
@@ -162,25 +162,27 @@ a {
 }
 
 .contact-link:hover {
-    color: #D3D3D3;
+    color: #202020;
 }
 
 /* PROJECTS GRID */
 .projects-container {
-    padding-left: 36px;
-    margin-top: 36px;
+    padding-top: 108px;
+    padding-bottom: 60px;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    gap: 60px 60px;
+    column-gap: 60px;
+    row-gap: 0;
     justify-content: center;
     margin: 0 auto;
 }
 
 .project-item {
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 .project-image {
@@ -233,19 +235,22 @@ a {
 }
 
 .lightbox-description {
-    color: #FFFFFF;
-    font-size: 16px;
+    color: #D3D3D3;
+    font-size: 18px;
     line-height: 1.6;
     max-width: 400px;
+    font-weight: normal;
 }
 
 .lightbox-description h3 {
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .lightbox-description p {
     margin-bottom: 8px;
+    font-weight: normal;
 }
 
 .lightbox-close {
@@ -253,14 +258,14 @@ a {
     top: 30px;
     right: 40px;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #D3D3D3;
     cursor: pointer;
     background: none;
     border: none;
 }
 
 .lightbox-close:hover {
-    color: #808080;
+    color: #202020;
 }
 
 /* FOOTER */
