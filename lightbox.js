@@ -1,10 +1,10 @@
 // Project data - Replace with your actual project information
 const projects = [
     {
-        image: 'assets/images/projects/project1-full.jpg',
-        title: 'Project Title 1',
-        location: 'Belgrade, Serbia',
-        medium: 'Ink on paper',
+        image: 'assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg',
+        title: 'Barutana Monument',
+        location: 'Barutana, Montenegro',
+        medium: 'Ink on paper, colored digitally in Photoshop',
         description: 'Detailed description of the project goes here. A few lines about the building, architectural style, or inspiration.'
     },
     {
