@@ -130,7 +130,7 @@ a {
     display: flex;
     align-items: flex-start;
     margin-left: calc(50% - 660px);
-    padding-top: 72px;
+    padding-top: 108px;
     gap: 60px;
 }
 
@@ -148,7 +148,7 @@ a {
 /* CONTACT PAGE */
 .contact-container {
     margin-left: calc(50% - 660px);
-    padding-top: 180px;
+    padding-top: 144px;
     font-size: 18px;
     line-height: 1.8;
 }
