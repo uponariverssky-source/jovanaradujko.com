@@ -130,7 +130,7 @@ a {
     display: flex;
     align-items: flex-start;
     margin-left: calc(50% - 660px);
-    padding-top: 108px;
+    padding-top: 72px;
     gap: 60px;
 }
 
@@ -147,18 +147,22 @@ a {
 
 /* CONTACT PAGE */
 .contact-container {
-    padding-left: 36px;
-    margin-top: 36px;
-    font-size: 16px;
+    margin-left: calc(50% - 660px);
+    padding-top: 108px;
+    font-size: 18px;
     line-height: 1.8;
 }
 
-.contact-container a {
-    text-decoration: underline;
+.contact-container p {
+    margin-bottom: 10px;
 }
 
-.contact-container a:hover {
-    color: #808080;
+.contact-link {
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #D3D3D3;
 }
 
 /* PROJECTS GRID */
@@ -270,11 +274,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
+    border: none;
 }
 
 .footer-signature {
     height: 30px;
     width: auto;
+    display: block;
 }
 
 /* Ensure content doesn't get hidden behind fixed footer */
