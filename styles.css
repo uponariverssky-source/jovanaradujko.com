@@ -69,9 +69,9 @@ a {
     display: flex;
     gap: 36px;
     font-size: 18px;
+    position: relative;
     margin-left: calc(50% - 660px);
-    margin-top: 36px;
-    margin-bottom: 0;
+    padding-top: 36px;
 }
 
 .nav-link {
