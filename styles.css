@@ -129,10 +129,8 @@ a {
 .about-container {
     display: flex;
     align-items: flex-start;
-    position: absolute;
-    left: 50%;
-    margin-left: -660px;
-    margin-top: 36px;
+    margin-left: calc(50% - 660px);
+    padding-top: 72px;
     gap: 60px;
 }
 
@@ -145,7 +143,6 @@ a {
     width: 400px;
     font-size: 16px;
     line-height: 1.6;
-    padding-top: 0;
 }
 
 /* CONTACT PAGE */
