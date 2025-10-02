@@ -130,7 +130,7 @@ a {
     display: flex;
     align-items: flex-start;
     margin-left: calc(50% - 660px);
-    padding-top: 144px;
+    padding-top: 72px;
     gap: 60px;
 }
 
@@ -270,7 +270,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #000000;
 }
 
 .footer-signature {
