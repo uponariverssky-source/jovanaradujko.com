@@ -69,7 +69,7 @@ a {
     display: flex;
     gap: 36px;
     font-size: 18px;
-    position: relative;
+    position: fixed;
     margin-left: calc(50% - 660px);
     padding-top: 36px;
 }
