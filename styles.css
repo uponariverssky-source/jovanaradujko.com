@@ -167,11 +167,8 @@ a {
 /* PROJECTS GRID */
 
 .projects-container {
-    display: flex;
-    align-items: flex-start;
-    margin-left: calc(50% - 660px);
     padding-top: 108px;
-    gap: 60px;
+    padding-bottom: 60px;
 }
 
 
