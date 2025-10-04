@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps - Jovana Radujko</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="maps-page">
+    <!-- Background Map Image -->
+    <div class="maps-background">
+        <!-- Replace 'map-novi-beograd.jpg' with your actual map image -->
+        <img src="../../assets/images/maps/map-novi-beograd.jpg" alt="Map of New Belgrade" class="maps-bg-image">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
+        <a href="../../about.html" class="nav-link">what i do</a>
+        <a href="../../projects-all.html" class="nav-link active">projects</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <a href="../../projects-all.html" class="nav-link">all</a>
+        <a href="../brutalism/index.html" class="nav-link">brutalism</a>
+        <a href="index.html" class="nav-link active">maps</a>
+        <a href="../genex360/index.html" class="nav-link">genex 360</a>
+        <a href="../churches/index.html" class="nav-link">churches</a>
+        <a href="../collabs/index.html" class="nav-link">collabs</a>
+    </nav>
+
+    <!-- Map Content -->
+    <div class="maps-content">
+        <h1 class="maps-title">Map of New Belgrade</h1>
+        <a href="#" class="maps-link" onclick="openMapLightbox(); return false;">CLICK FOR DETAILS</a>
+    </div>
+
+    <!-- Lightbox for Map Details -->
+    <div id="map-lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeMapLightbox()">&times;</button>
+        <div class="maps-lightbox-content">
+            <div class="maps-details-grid">
+                <!-- Replace with your actual detail images -->
+                <img src="../../assets/images/maps/detail1.jpg" alt="Detail 1" class="map-detail-image">
+                <img src="../../assets/images/maps/detail2.jpg" alt="Detail 2" class="map-detail-image">
+                <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                <img src="../../assets/images/maps/detail4.jpg" alt="Detail 4" class="map-detail-image">
+                <img src="../../assets/images/maps/detail5.jpg" alt="Detail 5" class="map-detail-image">
+                <img src="../../assets/images/maps/detail6.jpg" alt="Detail 6" class="map-detail-image">
+                <!-- Add more detail images as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../../assets/footer-signature.jpg" alt="Jovana Radujko" class="footer-signature">
+    </footer>
+
+    <script src="../../maps.js"></script>
+</body>
+</html>
