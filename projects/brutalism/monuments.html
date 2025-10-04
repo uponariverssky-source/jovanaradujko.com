@@ -1,209 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Monuments</title>
-  <style>
-    /* Load fonts */
-    @font-face {
-      font-family: 'MyriadProCond';
-      src: url('../../assets/MyriadPro-Cond.woff2') format('woff2'),
-           url('../../assets/MyriadPro-Cond.woff') format('woff');
-    }
-    @font-face {
-      font-family: 'MyriadProBoldCond';
-      src: url('../../assets/MyriadPro-BoldCond.woff2') format('woff2'),
-           url('../../assets/MyriadPro-BoldCond.woff') format('woff');
-    }
-
-    body {
-      background: white;
-      font-family: 'MyriadProCond', sans-serif;
-      margin: 0;
-      padding: 36px;
-      max-width: 1600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Primary menu */
-    .primary-menu {
-      font-size: 18px;
-      margin-bottom: 36px;
-    }
-    .primary-menu .name {
-      font-family: 'MyriadProBoldCond', sans-serif;
-      margin-right: 36px;
-    }
-    .primary-menu a {
-      margin-right: 36px;
-      text-decoration: none;
-      color: black;
-    }
-    .primary-menu a:active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    /* Secondary menu */
-    .secondary-menu {
-      font-size: 14px;
-      margin-bottom: 36px;
-    }
-    .secondary-menu a {
-      margin-right: 26px;
-      text-decoration: none;
-      color: black;
-    }
-
-    /* Third menu */
-    .third-menu {
-      font-size: 14px;
-      margin-bottom: 36px;
-    }
-    .third-menu a {
-      margin-right: 26px;
-      text-decoration: none;
-      color: black;
-    }
-
-    /* Gallery */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 60px;
-      justify-content: flex-start;
-    }
-    .item {
-      width: 530px;
-    }
-    .item img {
-      width: 530px;
-      height: auto;
-      display: block;
-    }
-    .caption {
-      margin-top: 13px;
-      font-size: 14px;
-      text-align: left;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 80px;
-      font-size: 18px;
-      text-align: center;
-      font-family: 'MyriadProCond', sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutalism - Monuments - Jovana Radujko</title>
+    <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
+        <a href="../../about.html" class="nav-link">what i do</a>
+        <a href="../../projects-all.html" class="nav-link active">projects</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+    </nav>
 
-  <!-- Primary menu -->
-  <div class="primary-menu">
-    <span class="name">jovana radujko</span>
-    <a href="../../about.html">about</a>
-    <a href="../../projects.html">projects</a>
-    <a href="../../contact.html">contact</a>
-  </div>
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <a href="../../projects-all.html" class="nav-link">all</a>
+        <a href="index.html" class="nav-link active">brutalism</a>
+        <a href="../../projects-maps.html" class="nav-link">maps</a>
+        <a href="../../projects-genex360.html" class="nav-link">genex 360</a>
+        <a href="../../projects-churches.html" class="nav-link">churches</a>
+        <a href="../../projects-collabs.html" class="nav-link">collabs</a>
+    </nav>
 
-  <!-- Secondary menu -->
-  <div class="secondary-menu">
-    <a href="../brutalism.html">brutalism</a>
-    <a href="../maps.html">maps</a>
-    <a href="../genex360.html">genex 360</a>
-    <a href="../churches.html">churches</a>
-    <a href="../collabs.html">collabs</a>
-  </div>
+    <!-- Tertiary Navigation -->
+    <nav class="tertiary-nav">
+        <a href="index.html" class="nav-link">all</a>
+        <a href="monuments.html" class="nav-link active">monuments</a>
+        <a href="non-residential.html" class="nav-link">non-residential</a>
+        <a href="residential.html" class="nav-link">residential</a>
+    </nav>
 
-  <!-- Third menu -->
-  <div class="third-menu">
-    <a href="monuments.html">monuments</a>
-    <a href="nonresidential.html">non-residential buildings</a>
-    <a href="residential.html">residential buildings</a>
-  </div>
+    <!-- Projects Grid -->
+    <div class="projects-container">
+        <div class="projects-grid">
+            <!-- Replace with your actual monument images -->
+            
+            <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/monuments/project1-thumb.jpg" alt="Monument 1" class="project-image">
+                <div class="project-caption">Monument Title 1</div>
+            </div>
 
-  <!-- Gallery -->
-  <div class="gallery">
-    
-    <div class="gallery-item">
-  <img src="../../assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Barutana Monument, Barutana, Montenegro">
-      <div class="caption">Barutana Monument, Barutana, Montenegro</div>
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/monuments/project2-thumb.jpg" alt="Monument 2" class="project-image">
+                <div class="project-caption">Monument Title 2</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/project3-thumb.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Monument Title 3</div>
+            </div>
+
+            <!-- Add more project items as needed -->
+        </div>
     </div>
 
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Bratunac_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Bratunac Monument, Bratunac, Bosnia & Herzegovina">
-      <div class="caption">Bratunac Monument, Bratunac, Bosnia & Herzegovina</div>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" class="lightbox-image">
+            <div class="lightbox-description">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-location"></p>
+                <p id="lightbox-medium"></p>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
     </div>
 
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Bubanj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Bubanj Monument, Niš, Serbia">
-      <div class="caption">Bubanj Monument, Niš, Serbia</div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <img src="../../assets/footer-signature.jpg" alt="Jovana Radujko" class="footer-signature">
+    </footer>
 
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Ilinden_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Ilinden Monument, Kruševo, North Macedonia">
-      <div class="caption">Ilinden Monument, Kruševo, North Macedonia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Kadinjaca_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Kadinjača Monument, Užice, Serbia">
-      <div class="caption">Kadinjača Monument, Užice, Serbia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Kosmaj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Kosmaj Monument, Kosmaj, Serbia">
-      <div class="caption">Kosmaj Monument, Kosmaj, Serbia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Kozara_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Kozara Monument, Kozara, Bosnia & Herzegovina">
-      <div class="caption">Kozara Monument, Kozara, Bosnia & Herzegovina</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Ostra_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Ostra Monument, Ostra, Serbia">
-      <div class="caption">Ostra Monument, Ostra, Serbia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Podgaric_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Podgarić Monument, Podgarić, Croatia">
-      <div class="caption">Podgarić Monument, Podgarić, Croatia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Popina_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Popina Monument, Popina, Serbia">
-      <div class="caption">Popina Monument, Popina, Serbia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Petrova_gora_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Petrova Gora Monument, Petrova Gora, Croatia">
-      <div class="caption">Petrova Gora Monument, Petrova Gora, Croatia</div>
-    </div>
-
-    <div class="item">
-      <img src="../../assets/images/projects/brutalism/monuments/Sutjeska_Tjentiste_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Sutjeska Monument, Tjentište, Bosnia & Herzegovina">
-      <div class="caption">Sutjeska Monument, Tjentište, Bosnia & Herzegovina</div>
-    </div>
-  </div>
-
-
-  <!-- Footer -->
-  <footer>
-    jovana radujko | all rights reserved ©
-  </footer>
-
+    <script src="../../lightbox.js"></script>
 </body>
 </html>
