@@ -99,10 +99,8 @@ a {
     display: flex;
     gap: 28px;
     margin-left: calc(50% - 660px);
-    padding-top: 72px;
+    margin-top: 36px;
     font-size: 14px;
-    position: absolute;
-    top: 0;
 }
 
 .secondary-nav .nav-link:hover {
@@ -118,10 +116,8 @@ a {
     display: flex;
     gap: 28px;
     margin-left: calc(50% - 660px);
-    padding-top: 100px;
+    margin-top: 28px;
     font-size: 14px;
-    position: absolute;
-    top: 0;
 }
 
 .tertiary-nav .nav-link:hover {
@@ -174,8 +170,13 @@ a {
 
 /* PROJECTS GRID */
 .projects-container {
-    padding-top: 108px;
+    margin-top: 36px;
     padding-bottom: 60px;
+}
+
+/* For pages with tertiary menu, override to maintain 108px from top */
+.tertiary-nav ~ .projects-container {
+    margin-top: 8px;
 }
 
 .projects-grid {
