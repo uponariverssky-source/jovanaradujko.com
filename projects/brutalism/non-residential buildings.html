@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutalism - Non-Residential - Jovana Radujko</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
+        <a href="../../about.html" class="nav-link">what i do</a>
+        <a href="../../projects-all.html" class="nav-link active">projects</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+    </nav>
 
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <a href="../../projects-all.html" class="nav-link">all</a>
+        <a href="index.html" class="nav-link active">brutalism</a>
+        <a href="../../projects-maps.html" class="nav-link">maps</a>
+        <a href="../../projects-genex360.html" class="nav-link">genex 360</a>
+        <a href="../../projects-churches.html" class="nav-link">churches</a>
+        <a href="../../projects-collabs.html" class="nav-link">collabs</a>
+    </nav>
+
+    <!-- Tertiary Navigation -->
+    <nav class="tertiary-nav">
+        <a href="index.html" class="nav-link">all</a>
+        <a href="monuments.html" class="nav-link">monuments</a>
+        <a href="non-residential.html" class="nav-link active">non-residential</a>
+        <a href="residential.html" class="nav-link">residential</a>
+    </nav>
+
+    <!-- Projects Grid -->
+    <div class="projects-container">
+        <div class="projects-grid">
+            <!-- Replace with your actual non-residential images -->
+            
+            <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/non-residential/project1-thumb.jpg" alt="Non-Residential 1" class="project-image">
+                <div class="project-caption">Non-Residential Title 1</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/non-residential/project2-thumb.jpg" alt="Non-Residential 2" class="project-image">
+                <div class="project-caption">Non-Residential Title 2</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/non-residential/project3-thumb.jpg" alt="Non-Residential 3" class="project-image">
+                <div class="project-caption">Non-Residential Title 3</div>
+            </div>
+
+            <!-- Add more project items as needed -->
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" class="lightbox-image">
+            <div class="lightbox-description">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-location"></p>
+                <p id="lightbox-medium"></p>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../../assets/footer-signature.jpg" alt="Jovana Radujko" class="footer-signature">
+    </footer>
+
+    <script src="../../lightbox.js"></script>
+</body>
+</html>
