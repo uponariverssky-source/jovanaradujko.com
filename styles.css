@@ -278,6 +278,33 @@ a {
     color: #202020;
 }
 
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: #D3D3D3;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #202020;
+}
+
+.lightbox-prev {
+    left: 40px;
+}
+
+.lightbox-next {
+    right: 40px;
+}
+
 /* FOOTER */
 footer {
     position: fixed;
