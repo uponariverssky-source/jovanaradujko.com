@@ -214,6 +214,32 @@ a {
     margin-bottom: 0;
 }
 
+/* CATEGORY ITEMS (for projects-all and brutalism index) */
+.category-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.category-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.category-item:hover .category-image {
+    opacity: 0.8;
+}
+
+.category-caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
 /* LIGHTBOX */
 .lightbox {
     display: none;
