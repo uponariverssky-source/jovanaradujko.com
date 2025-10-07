@@ -19,66 +19,38 @@
     <nav class="secondary-nav">
         <a href="../../projects-all.html" class="nav-link">all</a>
         <a href="index.html" class="nav-link active">brutalism</a>
-          <a href="../../projects/maps/index.html" class="nav-link">maps</a>
-        <a href="../../projects/genex360/index.html.html" class="nav-link">genex 360</a>
-        <a href="../../projects/churches/index.html" class="nav-link">churches</a>
-        <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
-        
+        <a href="../maps/index.html" class="nav-link">maps</a>
+        <a href="../genex360/index.html" class="nav-link">genex 360</a>
+        <a href="../churches/index.html" class="nav-link">churches</a>
+        <a href="../collabs/index.html" class="nav-link">collabs</a>
     </nav>
 
-    <!-- Tertiary Navigation -->
-    <nav class="tertiary-nav">
-        <a href="index.html" class="nav-link active">all</a>
-        <a href="monuments.html" class="nav-link">monuments</a>
-        <a href="non-residential.html" class="nav-link">non-residential</a>
-        <a href="residential.html" class="nav-link">residential</a>
-    </nav>
-
-    <!-- Projects Grid -->
+    <!-- Category Grid -->
     <div class="projects-container">
         <div class="projects-grid">
-            <!-- Replace with your actual brutalism images -->
+            <!-- Replace with your actual brutalism subcategory images -->
             
-            <div class="project-item" onclick="openLightbox(0)">
-                <img src="../../assets/images/projects/brutalism/project1-thumb.jpg" alt="Project 1" class="project-image">
-                <div class="project-caption">Brutalism Project 1</div>
-            </div>
+            <a href="monuments.html" class="category-item">
+                <img src="../../assets/images/categories/brutalism-monuments.jpg" alt="Monuments" class="category-image">
+                <div class="category-caption">monuments</div>
+            </a>
 
-            <div class="project-item" onclick="openLightbox(1)">
-                <img src="../../assets/images/projects/brutalism/project2-thumb.jpg" alt="Project 2" class="project-image">
-                <div class="project-caption">Brutalism Project 2</div>
-            </div>
+            <a href="non-residential.html" class="category-item">
+                <img src="../../assets/images/categories/brutalism-nonresidential.jpg" alt="Non-Residential" class="category-image">
+                <div class="category-caption">non-residential</div>
+            </a>
 
-            <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/project3-thumb.jpg" alt="Project 3" class="project-image">
-                <div class="project-caption">Brutalism Project 3</div>
-            </div>
+            <a href="residential.html" class="category-item">
+                <img src="../../assets/images/categories/brutalism-residential.jpg" alt="Residential" class="category-image">
+                <div class="category-caption">residential</div>
+            </a>
 
-            <!-- Add more project items as needed -->
-        </div>
-    </div>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-        <button class="lightbox-prev" onclick="previousImage()">&#8249;</button>
-        <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
-        <div class="lightbox-content">
-            <img id="lightbox-image" src="" alt="" class="lightbox-image">
-            <div class="lightbox-description">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-location"></p>
-                <p id="lightbox-medium"></p>
-                <p id="lightbox-desc"></p>
-            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
+        <img src="../../assets/footer-signature.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
-
-    <script src="../../lightbox.js"></script>
 </body>
 </html>
