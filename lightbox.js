@@ -7,6 +7,29 @@ const projects = [
         medium: 'Ink on paper',
         description: 'Detailed description of the project goes here. A few lines about the building, architectural style, or inspiration.'
     },
+
+        {
+        image: 'assets/images/projects/churches/Manastir_Manasija_Srbija_jovana_radujko.jpg',
+        title: 'Manasija Monastery',
+        location: 'Despotovac, Serbia',
+        medium: 'Freehand drawing, ink on paper, coloring in Adobe Photoshop
+    },
+
+        {
+        image: 'assets/images/projects/churches/Manastir_Ravanica_Srbija_jovana_radujko.jpg',
+        title: 'Ravanica Monastery',
+        location: 'Senj, Serbia',
+        medium: 'Freehand drawing, ink on paper, coloring in Adobe Photoshop',
+    
+    },
+
+        {
+        image: 'assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg',
+        title: 'Project Title 1',
+        location: 'Belgrade, Serbia',
+        medium: 'Ink on paper',
+        description: 'Detailed description of the project goes here. A few lines about the building, architectural style, or inspiration.'
+    },
     {
         image: 'assets/images/projects/project2-full.jpg',
         title: 'Project Title 2',
