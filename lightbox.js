@@ -12,14 +12,14 @@ const projects = [
         image: 'assets/images/projects/churches/Manastir_Manasija_Srbija_jovana_radujko.jpg',
         title: 'Manasija Monastery',
         location: 'Despotovac, Serbia',
-        medium: 'Freehand drawing, ink on paper, coloring in Adobe Photoshop
+        medium: 'Freehand drawing, ink on paper, coloring in Adobe Photoshop'
     },
 
         {
         image: 'assets/images/projects/churches/Manastir_Ravanica_Srbija_jovana_radujko.jpg',
         title: 'Ravanica Monastery',
         location: 'Senj, Serbia',
-        medium: 'Freehand drawing, ink on paper, coloring in Adobe Photoshop',
+        medium: 'Freehand drawing, ink on paper, coloring in Adobe Photoshop'
     
     },
 
