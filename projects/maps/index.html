@@ -1,4 +1,3 @@
-s
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@ s
     <!-- Background Map Image -->
     <div class="maps-background">
         <!-- Replace 'map-novi-beograd.jpg' with your actual map image -->
-        <img src="../../assets/maps_new_belgrade_preview_jovana_radujko.jpg" alt="Map of New Belgrade" class="maps-bg-image">
+        <img src="../../assets/images/maps/map-novi-beograd.jpg" alt="Map of New Belgrade" class="maps-bg-image">
     </div>
 
     <!-- Navigation -->
@@ -26,10 +25,10 @@ s
     <nav class="secondary-nav">
         <a href="../../projects-all.html" class="nav-link">all</a>
         <a href="../brutalism/index.html" class="nav-link">brutalism</a>
-   <a href="../../projects/maps/index.html" class="nav-link">maps</a>
-        <a href="../../projects/genex360/index.html" class="nav-link">genex 360</a>
-        <a href="../../projects/churches/index.html" class="nav-link">churches</a>
-        <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
+        <a href="index.html" class="nav-link active">maps</a>
+        <a href="../genex360/index.html" class="nav-link">genex 360</a>
+        <a href="../churches/index.html" class="nav-link">churches</a>
+        <a href="../collabs/index.html" class="nav-link">collabs</a>
     </nav>
 
     <!-- Map Content -->
@@ -42,36 +41,167 @@ s
     <div id="map-lightbox" class="lightbox">
         <button class="lightbox-close" onclick="closeMapLightbox()">&times;</button>
         <div class="maps-lightbox-content">
-            <div class="maps-details-grid">
-                <!-- Replace with your actual detail images -->
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa.jpg" alt="Detail 1" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_01.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_02.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_03.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_04.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_05.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_06.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_07.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_08.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_09.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_10.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_11.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_12.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_13.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_14.jpg" alt="Detail 3" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_15.jpg" alt="Detail 2" class="map-detail-image">
-                <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_16.jpg" alt="Detail 3" class="map-detail-image">
+            <div class="maps-details-list">
+                <!-- Replace with your actual detail images and descriptions -->
+                <div class="map-detail-item">
+                    <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa.jpg" alt="Detail 1" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 1</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                <div class="map-detail-item">
+                    <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_01.jpg" alt="Detail 2" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 2</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                <div class="map-detail-item">
+                    <img src="../../assets/images/projects/maps/Map_Of_New_Belgrade_Jovana_Radujko_Brutalizam_i_Renesansa_02.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                            <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
+
+                                <div class="map-detail-item">
+                    <img src="../../assets/images/maps/detail3.jpg" alt="Detail 3" class="map-detail-image">
+                    <div class="map-detail-text">
+                        <h3>Detail Title 3</h3>
+                        <p>Location information</p>
+                        <p>Description of this detail</p>
+                    </div>
+                </div>
 
 
-
-                <!-- Add more detail images as needed -->
+                <!-- Add more detail items as needed -->
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
+        <img src="../../assets/footer-signature.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
 
     <script src="../../maps.js"></script>
