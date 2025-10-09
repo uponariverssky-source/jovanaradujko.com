@@ -413,23 +413,25 @@ body {
 }
 
 .maps-lightbox-content {
-    width: 90vw;
-    max-height: 85vh;
-    overflow-y: scroll;
-    padding: 40px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 60px 40px;
+    box-sizing: border-box;
 }
 
 .maps-details-list {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    max-width: 1200px;
+    align-items: center;
 }
 
 .map-detail-item {
     display: flex;
     gap: 60px;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .map-detail-image {
@@ -444,8 +446,8 @@ body {
     color: #D3D3D3;
     font-size: 18px;
     line-height: 1.6;
-    flex: 1;
-    min-width: 300px;
+    width: 400px;
+    flex-shrink: 0;
 }
 
 .map-detail-text h3 {
