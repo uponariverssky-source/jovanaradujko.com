@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Brutalism - Residential - Jovana Radujko</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
+        <a href="../../about.html" class="nav-link">what i do</a>
+        <a href="../../projects-all.html" class="nav-link active">projects</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <a href="../../projects-all.html" class="nav-link">all</a>
+        <a href="index.html" class="nav-link active">brutalism</a>
+        <a href="../../projects/maps/index.html" class="nav-link">maps</a>
+        <a href="../../projects/genex360/index.html" class="nav-link">genex 360</a>
+        <a href="../../projects/churches/index.html" class="nav-link">churches</a>
+        <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
+    </nav>
+
+
+    <!-- Projects Grid -->
+    <div class="projects-container">
+        <div class="projects-grid">
+            <!-- Replace with your actual residential images -->
+            
+            <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/residential/Blok_23_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 1" class="project-image">
+                <div class="project-caption">Blok 23</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/residential/Blok_29_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 2" class="project-image">
+                <div class="project-caption">Blok 29</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/residential/Blok_30_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 3" class="project-image">
+                <div class="project-caption">Blok 30</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/residential/Blok_61_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 1" class="project-image">
+                <div class="project-caption">Blok 61</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/residential/Dorcol_Soliteri_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 2" class="project-image">
+                <div class="project-caption">Dorćol</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/residential/Istocna_Kapija_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 3" class="project-image">
+                <div class="project-caption">Istočna Kapija Beograda</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/residential/Televizorka_Blok_28_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 1" class="project-image">
+                <div class="project-caption">Televizorka</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/residential/Toblerone_Zgrada_Bogoslovija_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 2" class="project-image">
+                <div class="project-caption">Toblerone</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/residential/Vojvode_Stepe_Soliteri_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 3" class="project-image">
+                <div class="project-caption">Vojvode Stepe</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/residential/Zapadna_Kapija_Beograd_Krilo_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 1" class="project-image">
+                <div class="project-caption">Zapadna Kapija Beograda - Krilo</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/residential/Zapadna_Kapija_Beograd_Odozdo_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 2" class="project-image">
+                <div class="project-caption">Zapadna Kapija Beograda - kadar odozdo</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/residential/Zapadna_Kapija_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Residential 3" class="project-image">
+                <div class="project-caption">Zapadna Kapija Beograda</div>
+            </div>
+
+            <!-- Add more project items as needed -->
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-prev" onclick="previousImage()">&#8249;</button>
+        <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" class="lightbox-image">
+            <div class="lightbox-description">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-location"></p>
+                <p id="lightbox-medium"></p>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
+    </footer>
+
+    <script src="../../lightbox.js"></script>
+</body>
+</html>

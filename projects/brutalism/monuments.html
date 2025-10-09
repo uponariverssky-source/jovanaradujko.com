@@ -1,71 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Brutalism</title>
-  <style>
-    body { font-family: sans-serif; padding: 50px; max-width: 1200px; margin: auto; }
-    h1 { text-align: center; margin-bottom: 50px; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 60px; justify-content: center; }
-    .item { flex: 1 1 300px; text-align: center; }
-    .item img { max-width: 100%; height: auto; display: block; margin: auto; }
-    .caption { margin-top: 10px; font-size: 14px; color: #333; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutalism - Monuments - Jovana Radujko</title>
+    <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-  <h1>Monuments</h1>
-  <div class="gallery">
-    <div class="item">
-      <img src="Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg"
-        alt="Barutana Monument, Barutana, Montenegro">
-      <div class="caption">Barutana Monument, Barutana, Montenegro</div>
-    </div>
-    <div class="item">
-      <img src="Bratunac_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Bratunac Monument, Bratunac, Bosnia & Herzegovina">
-      <div class="caption">Bratunac Monument, Bratunac, Bosnia & Herzegovina, Location</div>
-    </div>
- <div class="item">
-      <img src="Bubanj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Bubanj Monument, Niš, Serbia">
-      <div class="caption">Bubanj Monument, Niš, Serbia, Location</div>
-    </div>
- <div class="item">
-      <img src="Ilinden_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Ilinden Monument, Kruševo, North Macedonia">
-      <div class="caption">Ilinden Monument, Kruševo, North Macedonia</div>
-    </div>
-    <div class="item">
-      <img src="Kadinjaca_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Kadinjača Monument, Užice, Serbia">
-      <div class="caption">Kadinjača Monument, Užice, Serbia</div>
-    </div>
-    <div class="item">
-      <img src="Kosmaj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Kosmaj Monument, Kosmaj, Serbia">
-      <div class="caption">Kosmaj Monument, Kosmaj, Serbia</div>
-    </div>
- <div class="item">
-      <img src="Kozara_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Kozara Monument, Kozara, Bosnia & Herzegovina">
-      <div class="caption">Kozara Monument, Kozara, Bosnia & Herzegovina</div>
-    </div>
- <div class="item">
-      <img src="Ostra_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Ostra monument, Ostra, Serbia">
-      <div class="caption">Ostra monument, Ostra, Serbia</div>
-    </div>
-    <div class="item">
-      <img src="Podgaric_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Podgarić Monument, Podgarić, Croatia">
-      <div class="caption">Podgarić Monument, Podgarić, Croatia</div>
-    </div>
-    <div class="item">
-      <img src="Popina_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Popina Monument, Popina, Serbia">
-      <div class="caption">Popina Monument, Popina, Serbia</div>
-    </div>
- <div class="item">
-      <img src="Petrova_gora_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Petrova Gora Monument, Petrova Gora, Croatia">
-      <div class="caption">Petrova Gora Monument, Petrova Gora, Croatia</div>
-    </div>
- <div class="item">
-      <img src="Sutjeska_Tjentiste_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Sutjeska Monument, Tjentište, Bosnia & Herzegovina">
-      <div class="caption">Sutjeska Monument, Tjentište, Bosnia & Herzegovina</div>
-    </div>
-  
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
+        <a href="../../about.html" class="nav-link">what i do</a>
+        <a href="../../projects-all.html" class="nav-link active">projects</a>
+        <a href="../../contact.html" class="nav-link">contact</a>
+    </nav>
 
-  </div>
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <a href="../../projects-all.html" class="nav-link">all</a>
+        <a href="index.html" class="nav-link active">brutalism</a>
+        <a href="../../projects/maps/index.html" class="nav-link">maps</a>
+        <a href="../../projects/genex360/index.html" class="nav-link">genex 360</a>
+        <a href="../../projects/churches/index.html" class="nav-link">churches</a>
+        <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
+    </nav>
+
+
+
+    <!-- Projects Grid -->
+    <div class="projects-container">
+        <div class="projects-grid">
+            <!-- Replace with your actual monument images -->
+            
+            <div class="project-item" onclick="openLightbox(0)">
+                <img src="../../assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 1" class="project-image">
+                <div class="project-caption">Barutana</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(1)">
+                <img src="../../assets/images/projects/brutalism/monuments/Bratunac_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 2" class="project-image">
+                <div class="project-caption">Bratunac</div>
+            </div>
+
+            <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Bubanj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Bubanj</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Ilinden_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Ilinden</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Kadinjaca_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Kadinjača</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Kosmaj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Kosmaj</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Kozara_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Kozara</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Ostra_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Ostra</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Petrova_gora_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Petrova Gora</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Podgaric_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Podgarić</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Popina_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Popina</div>
+            </div>
+
+                        <div class="project-item" onclick="openLightbox(2)">
+                <img src="../../assets/images/projects/brutalism/monuments/Sutjeska_Tjentiste_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Sutejska</div>
+            </div>
+
+
+            <!-- Add more project items as needed -->
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-prev" onclick="previousImage()">&#8249;</button>
+        <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" class="lightbox-image">
+            <div class="lightbox-description">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-location"></p>
+                <p id="lightbox-medium"></p>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
+    </footer>
+
+    <script src="../../lightbox.js"></script>
 </body>
 </html>

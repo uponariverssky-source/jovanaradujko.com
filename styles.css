@@ -1,0 +1,553 @@
+/* FONTS - MyriadPro Condensed */
+/* You'll need to add MyriadPro font files to your project */
+/* For now, using a fallback system font. Replace with @font-face when you have the font files */
+@font-face {
+    font-family: 'MyriadPro-Condensed';
+    src: url('assets/MyriadPro-Cond.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Condensed';
+    src: url('assets/MyriadPro-BoldCond.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'MyriadPro-Condensed', 'Arial Narrow', Arial, sans-serif;
+    background-color: #060606;
+    color: #D3D3D3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MAIN PAGE - VIDEO BACKGROUND */
+.main-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #060606;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-page .main-nav {
+    color: #D3D3D3;
+}
+
+.main-page .main-nav .nav-link {
+    color: #D3D3D3;
+}
+
+.main-page .main-nav .nav-link:hover {
+    color: #202020;
+}
+
+/* NAVIGATION - Main Menu */
+.main-nav {
+    display: flex;
+    gap: 36px;
+    font-size: 18px;
+    margin-left: calc(50% - 660px);
+    padding-top: 36px;
+    padding-bottom: 0;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-bold {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #202020;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* SECONDARY MENU (Projects categories) */
+.secondary-nav {
+    display: flex;
+    gap: 28px;
+    margin-left: calc(50% - 660px);
+    margin-top: 36px;
+    font-size: 14px;
+}
+
+.secondary-nav .nav-link:hover {
+    color: #202020;
+}
+
+.secondary-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* TERTIARY MENU (Brutalism subcategories) */
+.tertiary-nav {
+    display: flex;
+    gap: 28px;
+    margin-left: calc(50% - 660px);
+    margin-top: 28px;
+    font-size: 14px;
+}
+
+.tertiary-nav .nav-link:hover {
+    color: #202020;
+}
+
+.tertiary-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* ABOUT PAGE */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: calc(50% - 660px);
+    padding-top: 108px;
+    gap: 60px;
+}
+
+.about-photo {
+    width: 400px;
+    height: auto;
+}
+
+.about-text {
+    width: 400px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    margin-left: calc(50% - 660px);
+    padding-top: 180px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-container p {
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #202020;
+}
+
+/* PROJECTS GRID */
+.projects-container {
+    margin-top: 36px;
+    padding-bottom: 60px;
+}
+
+/* For pages with tertiary menu, override to maintain 108px from top */
+.tertiary-nav ~ .projects-container {
+    margin-top: 8px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 60px;
+    row-gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.project-item {
+    cursor: pointer;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-image {
+    opacity: 0.8;
+}
+
+.project-caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+/* CATEGORY ITEMS (for projects-all and brutalism index) */
+.category-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.category-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.category-item:hover .category-image {
+    opacity: 0.8;
+}
+
+.category-caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #060606;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.lightbox.active {
+    display: block;
+}
+
+.lightbox-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -265px;
+}
+
+.lightbox-image {
+    width: 530px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.lightbox-description {
+    color: #D3D3D3;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 400px;
+    font-weight: normal;
+}
+
+.lightbox-description h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.lightbox-description p {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: #D3D3D3;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.lightbox-close:hover {
+    color: #202020;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: #D3D3D3;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #202020;
+}
+
+.lightbox-prev {
+    left: 40px;
+}
+
+.lightbox-next {
+    right: 40px;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background-color: #060606;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    border: none;
+}
+
+.footer-signature {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+/* Ensure content doesn't get hidden behind fixed footer */
+body {
+    padding-bottom: 50px;
+}
+
+/* DETAILS PAGES (maps/details, genex360/details, collabs details) */
+.details-container {
+    margin-top: 36px;
+    padding-bottom: 60px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 60px;
+    row-gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.detail-item,
+.detail-item-no-caption {
+    width: 100%;
+}
+
+.detail-image {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.detail-caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+/* Mobile responsiveness for details pages */
+@media screen and (max-width: 768px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        gap: 40px;
+    }
+    
+    .detail-image {
+        width: 100%;
+    }
+}
+
+/* MAPS PAGE */
+.maps-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.maps-page .main-nav,
+.maps-page .secondary-nav {
+    position: relative;
+    z-index: 10;
+}
+
+.maps-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.maps-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.maps-content {
+    margin-left: calc(50% - 660px);
+    padding-top: 108px;
+    text-align: left;
+}
+
+.maps-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #D3D3D3;
+}
+
+.maps-link {
+    font-size: 24px;
+    color: #D3D3D3;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.maps-link:hover {
+    color: #202020;
+}
+
+.maps-lightbox-content {
+    width: 100%;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.maps-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.map-detail-item {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    position: relative;
+    left: 50%;
+    margin-left: -265px;
+}
+
+.map-detail-image {
+    width: 530px;
+    max-width: 530px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.map-detail-text {
+    color: #D3D3D3;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.map-detail-text h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.map-detail-text p {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+/* GENEX 360 PAGE */
+.genex-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.genex-page .main-nav,
+.genex-page .secondary-nav {
+    position: relative;
+    z-index: 10;
+}
+
+.genex-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.genex-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.genex-content {
+    margin-left: calc(50% - 660px);
+    padding-top: 108px;
+    text-align: left;
+}
+
+.genex-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #D3D3D3;
+}
+
+.genex-subtitle {
+    font-size: 24px;
+    color: #D3D3D3;
+}
