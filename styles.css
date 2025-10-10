@@ -372,11 +372,12 @@ body {
     position: fixed;
     top: 36px;
     right: 60px;
-    font-size: 40px;
+    font-size: 60px;
     color: #D3D3D3;
     text-decoration: none;
     z-index: 100;
     transition: color 0.3s ease;
+    line-height: 1;
 }
 
 .back-button:hover {
@@ -385,16 +386,30 @@ body {
 
 /* PAGE DESCRIPTION */
 .page-description {
-    margin-left: calc(50% - 660px);
+    max-width: 1320px;
+    margin: 0 auto;
     margin-top: 36px;
     margin-bottom: 24px;
-    max-width: 800px;
+    padding: 0 60px;
 }
 
 .page-description p {
     font-size: 14px;
     line-height: 1.6;
     color: #D3D3D3;
+    text-align: left;
+}
+
+/* Mobile responsiveness for back button and description */
+@media screen and (max-width: 768px) {
+    .back-button {
+        right: 20px;
+        font-size: 50px;
+    }
+    
+    .page-description {
+        padding: 0 20px;
+    }
 }
 
 /* PROJECT ITEMS (without lightbox) */
