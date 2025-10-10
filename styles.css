@@ -367,6 +367,49 @@ body {
     padding-bottom: 60px;
 }
 
+/* BACK BUTTON (X) */
+.back-button {
+    position: fixed;
+    top: 36px;
+    right: 60px;
+    font-size: 40px;
+    color: #D3D3D3;
+    text-decoration: none;
+    z-index: 100;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #202020;
+}
+
+/* PAGE DESCRIPTION */
+.page-description {
+    margin-left: calc(50% - 660px);
+    margin-top: 36px;
+    margin-bottom: 24px;
+    max-width: 800px;
+}
+
+.page-description p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #D3D3D3;
+}
+
+/* PROJECT ITEMS (without lightbox) */
+.project-item-static {
+    cursor: default;
+}
+
+.project-item-static .project-image {
+    transition: none;
+}
+
+.project-item-static:hover .project-image {
+    opacity: 1;
+}
+
 .details-grid {
     display: grid;
     grid-template-columns: repeat(3, 400px);
