@@ -25,68 +25,74 @@
         <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
     </nav>
 
+       <a href="index.html" class="back-button">&times;</a>
+
+   <div class="page-description">
+       <p>Your description text here.</p>
+   </div>
+
 
     <!-- Projects Grid -->
     <div class="projects-container">
         <div class="projects-grid">
             <!-- Replace with your actual non-residential images -->
             
-            <div class="project-item" onclick="openLightbox(0)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/25_Maj_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 1" class="project-image">
                 <div class="project-caption">25. Maj</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(1)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Avala_Toranj_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 2" class="project-image">
                 <div class="project-caption">Avala, toranj</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(2)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Dom_Kulture_Studentski_Grad_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 3" class="project-image">
                 <div class="project-caption">Dom Kulture Studentski Grad</div>
             </div>
 
-                        <div class="project-item" onclick="openLightbox(0)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Fontana_Blok1_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 1" class="project-image">
                 <div class="project-caption">Fontana</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(1)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Hala_Pionir_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 2" class="project-image">
                 <div class="project-caption">Hala Pionir</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(2)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Hotel_Zlatibor_Uzice_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 3" class="project-image">
                 <div class="project-caption">Hotel Zlatibor</div>
             </div>
 
-                        <div class="project-item" onclick="openLightbox(0)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Muzej_Savremene_Umetnosti_MSU_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 1" class="project-image">
                 <div class="project-caption">Muzej Savremene Umetnosti</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(1)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Muzej_Vazduhoplovstva_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 2" class="project-image">
                 <div class="project-caption">Muzej Vazduhoplovstva</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(2)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/SIV_3_Novi_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 3" class="project-image">
                 <div class="project-caption">SIV III</div>
             </div>
 
-                        <div class="project-item" onclick="openLightbox(0)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/SIV_Palata_Srbija_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 1" class="project-image">
                 <div class="project-caption">SIV Palata Srbija</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(1)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/SPENS_Novi_Sad_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 2" class="project-image">
                 <div class="project-caption">SPENS</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(2)">
+            <div class="project-item-static">
                 <img src="../../assets/images/projects/brutalism/non-residential/Telekomunikacioni_centar_Beograd_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Non-Residential 3" class="project-image">
                 <div class="project-caption">Pošta 11350</div>
             </div>
@@ -95,19 +101,7 @@
         </div>
     </div>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-        <button class="lightbox-prev" onclick="previousImage()">&#8249;</button>
-        <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
-        <div class="lightbox-content">
-            <img id="lightbox-image" src="" alt="" class="lightbox-image">
-            <div class="lightbox-description">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-location"></p>
-                <p id="lightbox-medium"></p>
-                <p id="lightbox-desc"></p>
-            </div>
+
         </div>
     </div>
 
@@ -116,6 +110,6 @@
         <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
 
-    <script src="../../lightbox.js"></script>
+
 </body>
 </html>
