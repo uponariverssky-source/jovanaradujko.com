@@ -19,13 +19,19 @@
     <nav class="secondary-nav">
         <a href="../../projects-all.html" class="nav-link">all</a>
         <a href="index.html" class="nav-link active">brutalism</a>
-        <a href="../../projects/maps/index.html" class="nav-link">maps</a>
-        <a href="../../projects/genex360/index.html" class="nav-link">genex 360</a>
-        <a href="../../projects/churches/index.html" class="nav-link">churches</a>
-        <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
+        <a href="../../projects-maps.html" class="nav-link">maps</a>
+        <a href="../../projects-genex360.html" class="nav-link">genex 360</a>
+        <a href="../../projects-churches.html" class="nav-link">churches</a>
+        <a href="../../projects-collabs.html" class="nav-link">collabs</a>
     </nav>
 
-
+    <!-- Tertiary Navigation -->
+    <nav class="tertiary-nav">
+        <a href="index.html" class="nav-link">all</a>
+        <a href="monuments.html" class="nav-link active">monuments</a>
+        <a href="non-residential.html" class="nav-link">non-residential</a>
+        <a href="residential.html" class="nav-link">residential</a>
+    </nav>
 
     <!-- Projects Grid -->
     <div class="projects-container">
@@ -33,90 +39,31 @@
             <!-- Replace with your actual monument images -->
             
             <div class="project-item" onclick="openLightbox(0)">
-                <img src="../../assets/images/projects/brutalism/monuments/Barutana_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 1" class="project-image">
-                <div class="project-caption">Barutana</div>
+                <img src="../../assets/images/projects/brutalism/monuments/project1-thumb.jpg" alt="Monument 1" class="project-image">
+                <div class="project-caption">Monument Title 1</div>
             </div>
 
             <div class="project-item" onclick="openLightbox(1)">
-                <img src="../../assets/images/projects/brutalism/monuments/Bratunac_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 2" class="project-image">
-                <div class="project-caption">Bratunac</div>
+                <img src="../../assets/images/projects/brutalism/monuments/project2-thumb.jpg" alt="Monument 2" class="project-image">
+                <div class="project-caption">Monument Title 2</div>
             </div>
 
             <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Bubanj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Bubanj</div>
+                <img src="../../assets/images/projects/brutalism/monuments/project3-thumb.jpg" alt="Monument 3" class="project-image">
+                <div class="project-caption">Monument Title 3</div>
             </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Ilinden_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Ilinden</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Kadinjaca_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Kadinjača</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Kosmaj_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Kosmaj</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Kozara_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Kozara</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Ostra_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Ostra</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Podgaric_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Podgarić</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Popina_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Popina</div>
-            </div>
-
-                        <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/Sutjeska_Tjentiste_monument_spomenik_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Monument 3" class="project-image">
-                <div class="project-caption">Sutejska</div>
-            </div>
-
-                              <div class="project-item" onclick="openLightbox(2)">
-                <img src="../../assets/images/projects/brutalism/monuments/monuments_see_more.jpg
-" alt="Monument 3" class="project-image">
-                <div class="project-caption"></div>
-            </div>
-
 
             <!-- Add more project items as needed -->
         </div>
     </div>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-        <button class="lightbox-prev" onclick="previousImage()">&#8249;</button>
-        <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
-        <div class="lightbox-content">
-            <img id="lightbox-image" src="" alt="" class="lightbox-image">
-            <div class="lightbox-description">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-location"></p>
-                <p id="lightbox-medium"></p>
-                <p id="lightbox-desc"></p>
-            </div>
+   
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
+        <img src="../../assets/footer-signature.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
 
     <script src="../../lightbox.js"></script>
