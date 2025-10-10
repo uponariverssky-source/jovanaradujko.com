@@ -72,7 +72,7 @@ a {
 .main-nav {
     display: flex;
     gap: 36px;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: calc(50% - 660px);
     padding-top: 36px;
     padding-bottom: 0;
@@ -100,7 +100,7 @@ a {
     gap: 28px;
     margin-left: calc(50% - 660px);
     margin-top: 36px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .secondary-nav .nav-link:hover {
@@ -144,7 +144,7 @@ a {
 
 .about-text {
     width: 400px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
@@ -209,7 +209,7 @@ a {
 
 .project-caption {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 14px;
     margin-bottom: 0;
 }
@@ -235,8 +235,8 @@ a {
 
 .category-caption {
     font-weight: bold;
-    font-size: 16px;
-    margin-top: 16px;
+    font-size: 15px;
+    margin-top: 15px;
     margin-bottom: 0;
 }
 
@@ -394,7 +394,7 @@ body {
 }
 
 .page-description p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     color: #D3D3D3;
     text-align: left;
@@ -447,8 +447,8 @@ body {
 
 .detail-caption {
     font-weight: bold;
-    font-size: 16px;
-    margin-top: 16px;
+    font-size: 15px;
+    margin-top: 15px;
     margin-bottom: 0;
 }
 
@@ -506,7 +506,7 @@ body {
 }
 
 .maps-link {
-    font-size: 22px;
+    font-size: 20px;
     color: #D3D3D3;
     text-decoration: underline;
     cursor: pointer;
@@ -548,7 +548,7 @@ body {
 
 .map-detail-text {
     color: #D3D3D3;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     width: 400px;
     flex-shrink: 0;
@@ -557,7 +557,7 @@ body {
 .map-detail-text h3 {
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .map-detail-text p {
@@ -606,6 +606,6 @@ body {
 }
 
 .genex-subtitle {
-    font-size: 22px;
+    font-size: 20px;
     color: #D3D3D3;
 }
