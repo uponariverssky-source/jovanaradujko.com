@@ -72,7 +72,7 @@ a {
 .main-nav {
     display: flex;
     gap: 36px;
-    font-size: 18px;
+    font-size: 22px;
     margin-left: calc(50% - 660px);
     padding-top: 36px;
     padding-bottom: 0;
@@ -100,7 +100,7 @@ a {
     gap: 28px;
     margin-left: calc(50% - 660px);
     margin-top: 36px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .secondary-nav .nav-link:hover {
@@ -152,7 +152,7 @@ a {
 .contact-container {
     margin-left: calc(50% - 660px);
     padding-top: 180px;
-    font-size: 18px;
+    font-size: 48px;
     line-height: 1.8;
 }
 
@@ -183,7 +183,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     column-gap: 60px;
-    row-gap: 50px;
+    row-gap: 36px;
     justify-content: center;
     margin: 0 auto;
     align-items: start;
@@ -209,7 +209,7 @@ a {
 
 .project-caption {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 14px;
     margin-bottom: 0;
 }
@@ -235,8 +235,8 @@ a {
 
 .category-caption {
     font-weight: bold;
-    font-size: 14px;
-    margin-top: 14px;
+    font-size: 16px;
+    margin-top: 16px;
     margin-bottom: 0;
 }
 
@@ -394,7 +394,7 @@ body {
 }
 
 .page-description p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: #D3D3D3;
     text-align: left;
@@ -447,8 +447,8 @@ body {
 
 .detail-caption {
     font-weight: bold;
-    font-size: 14px;
-    margin-top: 14px;
+    font-size: 16px;
+    margin-top: 16px;
     margin-bottom: 0;
 }
 
@@ -506,7 +506,7 @@ body {
 }
 
 .maps-link {
-    font-size: 24px;
+    font-size: 22px;
     color: #D3D3D3;
     text-decoration: underline;
     cursor: pointer;
@@ -548,7 +548,7 @@ body {
 
 .map-detail-text {
     color: #D3D3D3;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     width: 400px;
     flex-shrink: 0;
@@ -557,7 +557,7 @@ body {
 .map-detail-text h3 {
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .map-detail-text p {
@@ -606,6 +606,6 @@ body {
 }
 
 .genex-subtitle {
-    font-size: 24px;
+    font-size: 22px;
     color: #D3D3D3;
 }
