@@ -25,17 +25,23 @@
         <a href="../collabs/index.html" class="nav-link">collabs</a>
     </nav>
 
+    <div class="page-description">
+  <p>
+    Freehand drawings, ink on paper. Colored in Adobe Photoshop.
+  </p>
+</div>
+
     <!-- Projects Grid -->
     <div class="projects-container">
         <div class="projects-grid">
             <!-- Replace with your actual church images -->
             
-            <div class="project-item" onclick="openLightbox(0)">
+            <div class="project-item-static"
                 <img src="../../assets/images/projects/churches/Manastir_Manasija_Srbija_jovana_radujko.jpg" alt="Church 1" class="project-image">
                 <div class="project-caption">Manasija</div>
             </div>
 
-            <div class="project-item" onclick="openLightbox(1)">
+            <div class="project-item-static"
                 <img src="../../assets/images/projects/churches/Manastir_Ravanica_Srbija_jovana_radujko.jpg" alt="Church 2" class="project-image">
                 <div class="project-caption">Ravanica</div>
             </div>
@@ -45,19 +51,7 @@
         </div>
     </div>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-        <button class="lightbox-prev" onclick="previousImage()">&#8249;</button>
-        <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
-        <div class="lightbox-content">
-            <img id="lightbox-image" src="" alt="" class="lightbox-image">
-            <div class="lightbox-description">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-location"></p>
-                <p id="lightbox-medium"></p>
-                <p id="lightbox-desc"></p>
-            </div>
+    
         </div>
     </div>
 
@@ -66,6 +60,5 @@
         <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
 
-    <script src="../../lightbox.js"></script>
 </body>
 </html>
