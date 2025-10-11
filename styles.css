@@ -358,8 +358,8 @@ footer {
 
 /* Scrollable Viewport for Panorama */
 .genex-viewport {
-    width: 530px;
-    height: 700px;
+    width: 400px;
+    height: 530px;
     overflow: auto;
     border: 1px solid #D3D3D3;
     cursor: grab;
