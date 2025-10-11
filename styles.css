@@ -360,10 +360,29 @@ footer {
 .genex-viewport {
     width: 400px;
     height: 530px;
-    overflow: auto;
+    overflow: scroll;
     border: 1px solid #D3D3D3;
     cursor: grab;
-    margin-bottom: 20px;
+    scrollbar-color: #060606 #060606;
+}
+
+/* Style scrollbar for webkit browsers (Chrome, Safari, Edge) */
+.genex-viewport::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.genex-viewport::-webkit-scrollbar-track {
+    background: #060606;
+}
+
+.genex-viewport::-webkit-scrollbar-thumb {
+    background: #202020;
+    border-radius: 0;
+}
+
+.genex-viewport::-webkit-scrollbar-thumb:hover {
+    background: #303030;
 }
 
 .genex-viewport:active {
@@ -378,13 +397,18 @@ footer {
     -webkit-user-drag: none;
 }
 
+.genex-instructions {
+    margin-top: 10px;
+}
+
 .genex-details-link {
     font-size: 20px;
     color: #D3D3D3;
     text-decoration: underline;
     cursor: pointer;
     transition: color 0.3s ease;
-    display: inline-block;
+    display: inline;
+    margin-left: 15px;
 }
 
 .genex-details-link:hover {
