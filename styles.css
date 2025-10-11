@@ -352,18 +352,41 @@ footer {
 
 .genex-content {
     margin-left: calc(50% - 660px);
-    padding-top: 108px;
+    margin-top: 0;
     text-align: left;
 }
 
-.genex-title {
-    font-size: 48px;
-    font-weight: bold;
+/* Scrollable Viewport for Panorama */
+.genex-viewport {
+    width: 530px;
+    height: 700px;
+    overflow: auto;
+    border: 1px solid #D3D3D3;
+    cursor: grab;
     margin-bottom: 20px;
-    color: #D3D3D3;
 }
 
-.genex-subtitle {
+.genex-viewport:active {
+    cursor: grabbing;
+}
+
+.genex-panorama {
+    width: 1920px;
+    height: auto;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.genex-details-link {
     font-size: 20px;
     color: #D3D3D3;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.genex-details-link:hover {
+    color: #202020;
 }
