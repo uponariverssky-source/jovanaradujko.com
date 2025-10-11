@@ -8,10 +8,7 @@
 </head>
 <body class="maps-page">
     <!-- Background Map Image -->
-    <div class="maps-background">
-        <!-- Replace 'map-novi-beograd.jpg' with your actual map image -->
-        <img src="../../assets/maps_new_belgrade_preview_jovana_radujko_brutalizam_i_renesansa.jpg" alt="Map of New Belgrade" class="maps-bg-image">
-    </div>
+  
 
     <!-- Navigation -->
     <nav class="main-nav">
@@ -31,15 +28,60 @@
         <a href="../collabs/index.html" class="nav-link">collabs</a>
     </nav>
 
-    <!-- Map Content -->
-    <div class="maps-content">
-        <h1 class="maps-title">MAP OF NEW BELGRADE</h1>
-        <a href="details.html" class="maps-link">click for details</a>
+    <!-- Page Description -->
+    <div class="page-description">
+        <p>Freehand axonometric drawing of New Belgrade.</p>
+        <p class="genex-instructions">DRAG IMAGE TO EXPLORE <a href="details.html" class="genex-details-link">CLICK HERE FOR DETAILS</a></p>
+    </div>
+
+    <!-- Genex Content -->
+    <div class="genex-content">        
+        <!-- Scrollable Image Container -->
+        <div class="genex-viewport">
+            <img src="../../assets/images/projects/maps/map_of_new_belgrade_jovana_radujko_brutalizam_i_renesansa.jpg" alt="360 view panorama" class="genex-panorama">
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
         <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
+
+    <script>
+        // Pan functionality for the viewport
+        const viewport = document.querySelector('.genex-viewport');
+        let isDown = false;
+        let startX;
+        let startY;
+        let scrollLeft;
+        let scrollTop;
+
+        viewport.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - viewport.offsetLeft;
+            startY = e.pageY - viewport.offsetTop;
+            scrollLeft = viewport.scrollLeft;
+            scrollTop = viewport.scrollTop;
+        });
+
+        viewport.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        viewport.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+
+        viewport.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - viewport.offsetLeft;
+            const y = e.pageY - viewport.offsetTop;
+            const walkX = (x - startX);
+            const walkY = (y - startY);
+            viewport.scrollLeft = scrollLeft - walkX;
+            viewport.scrollTop = scrollTop - walkY;
+        });
+    </script>
 </body>
 </html>
