@@ -224,6 +224,16 @@ a {
     margin-bottom: 0;
 }
 
+/* Clickable detail items (for "see more" images) */
+.detail-item-clickable,
+.detail-item-clickable img {
+    cursor: pointer;
+}
+
+.detail-item-clickable img:hover {
+    opacity: 0.8;
+}
+
 /* CATEGORY ITEMS (for projects-all and brutalism index) */
 .category-item {
     cursor: pointer;
@@ -402,7 +412,7 @@ footer {
 }
 
 .genex-details-link {
-
+    font-size: 20px;
     color: #D3D3D3;
     text-decoration: underline;
     cursor: pointer;
