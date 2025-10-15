@@ -36,7 +36,7 @@ a {
     color: inherit;
 }
 
-/* MAIN PAGE - VIDEO BACKGROUND */
+/* MAIN PAGE - LAYERED BACKGROUND */
 .main-page {
     position: relative;
     width: 100%;
@@ -45,7 +45,22 @@ a {
     background-color: #060606;
 }
 
-.video-background {
+/* Background Image Layer (bottom) */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/images/main-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+/* Video Effects Layer (on top of image) */
+.video-layer {
     position: fixed;
     top: 0;
     left: 0;
@@ -53,6 +68,8 @@ a {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    opacity: 1;
+    mix-blend-mode: normal;
 }
 
 .main-page .main-nav {
