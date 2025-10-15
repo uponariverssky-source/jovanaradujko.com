@@ -92,6 +92,8 @@ a {
     margin-left: calc(50% - 660px);
     padding-top: 36px;
     padding-bottom: 0;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-link {
