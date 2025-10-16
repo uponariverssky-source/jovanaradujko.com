@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="main-page">
-
-     <!-- Background Image Layer (bottom) -->
+    <!-- BACKGROUND IMAGE - Static image layer -->
     <div class="background-image"></div>
     
-    <!-- VIDEO BACKGROUND - Add your video file here when ready -->
-    <video autoplay muted loop playsinline class="video-background">
-        <!-- Replace 'your-video.mp4' with your actual video filename -->
+    <!-- VIDEO LAYER - Effects/animation layer on top -->
+    <video autoplay muted loop playsinline class="video-layer">
+        <!-- WebM format -->
         <source src="assets/proba siv 222.webm" type="video/webm">
-        <!-- You can add additional formats for better browser support -->
-        <!-- <source src="your-video.webm" type="video/webm"> -->
+        <!-- MP4 fallback if you have it -->
+        <!-- <source src="assets/your-video.mp4" type="video/mp4"> -->
     </video>
+
+    <!-- Transparent protective layer over video -->
+    <div class="video-overlay"></div>
 
     <!-- Navigation -->
     <nav class="main-nav">
