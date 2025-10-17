@@ -52,11 +52,11 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/SIV_Palata_Srbija_Jovana_Radujko_Brutalizam_i_Renesansa.jpg');
+    background-image: url('assets/images/your-background-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -2;
+    z-index: 1;
 }
 
 /* Video Effects Layer (on top of image) */
@@ -67,13 +67,28 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 2;
     opacity: 1;
     mix-blend-mode: normal;
+    pointer-events: none;
+}
+
+/* Transparent protective overlay */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: transparent;
+    pointer-events: none;
 }
 
 .main-page .main-nav {
     color: #D3D3D3;
+    position: relative;
+    z-index: 1000;
 }
 
 .main-page .main-nav .nav-link {
@@ -82,6 +97,10 @@ a {
 
 .main-page .main-nav .nav-link:hover {
     color: #202020;
+}
+
+.main-page footer {
+    z-index: 1000;
 }
 
 /* NAVIGATION - Main Menu */
@@ -442,4 +461,177 @@ footer {
 
 .genex-details-link:hover {
     color: #202020;
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+    
+    /* NAVIGATION */
+    .main-nav {
+        margin-left: 20px;
+        padding-top: 20px;
+        font-size: 18px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .secondary-nav {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 14px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    /* MAIN PAGE - Mobile video */
+    .main-page .video-layer {
+        display: none;
+    }
+    
+    .main-page .video-layer-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+        pointer-events: none;
+    }
+    
+    .background-image {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* ABOUT PAGE */
+    .about-container {
+        flex-direction: column;
+        margin-left: 20px;
+        padding-top: 60px;
+        gap: 30px;
+    }
+    
+    .about-photo {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .about-text {
+        width: 100%;
+        max-width: 400px;
+        padding-right: 20px;
+    }
+    
+    /* CONTACT PAGE */
+    .contact-container {
+        margin-left: 20px;
+        padding-top: 100px;
+        padding-right: 20px;
+        font-size: 32px;
+    }
+    
+    /* BACK BUTTON */
+    .back-button {
+        right: 20px;
+        top: 20px;
+        font-size: 50px;
+    }
+    
+    /* PAGE DESCRIPTION */
+    .page-description {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .page-description p {
+        font-size: 14px;
+    }
+    
+    /* PROJECTS GRID - 1 column on mobile */
+    .projects-container,
+    .details-container {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .projects-grid,
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .project-image,
+    .detail-image,
+    .category-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .project-item,
+    .project-item-static,
+    .detail-item,
+    .detail-item-no-caption,
+    .category-item {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* MAPS PAGE */
+    .maps-content {
+        margin-left: 20px;
+        padding-top: 60px;
+        padding-right: 20px;
+    }
+    
+    .maps-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .maps-link {
+        font-size: 18px;
+    }
+    
+    /* GENEX 360 PAGE */
+    .genex-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .genex-viewport {
+        width: 100%;
+        max-width: 400px;
+        height: 530px;
+    }
+    
+    .genex-instructions {
+        margin-top: 8px;
+    }
+    
+    .genex-details-link {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    /* FOOTER */
+    footer {
+        height: 30px;
+    }
+    
+    .footer-signature {
+        height: 24px;
+    }
+    
+    body {
+        padding-bottom: 40px;
+    }
 }
