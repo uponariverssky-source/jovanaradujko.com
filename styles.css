@@ -73,8 +73,8 @@ a {
     pointer-events: none;
 }
 
-/* Mobile video layer (hidden by default) */
-.video-layer-mobile {
+/* Hide mobile video on desktop */
+.video-mobile {
     display: none;
 }
 
@@ -491,13 +491,21 @@ footer {
         flex-wrap: wrap;
     }
     
-    /* MAIN PAGE - Mobile video */
-    .main-page .video-layer {
-        display: none;
+    /* MAIN PAGE - Swap videos on mobile */
+    .video-desktop {
+        display: none !important;
     }
     
-    .main-page .video-layer-mobile {
-        display: block;
+    .video-mobile {
+        display: block !important;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
     }
     
     .background-image {
