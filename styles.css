@@ -488,11 +488,11 @@ footer {
     
     /* MAIN PAGE - Mobile video */
     .main-page .video-layer {
-        display: none;
+        display: block;
     }
     
     .main-page .video-layer-mobile {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
