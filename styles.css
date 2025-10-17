@@ -59,7 +59,7 @@ a {
     z-index: 1;
 }
 
-/* Video Effects Layer (on top of image) */
+/* Video Effects Layer (on top of image) - DESKTOP */
 .video-layer {
     position: fixed;
     top: 0;
@@ -71,6 +71,11 @@ a {
     opacity: 1;
     mix-blend-mode: normal;
     pointer-events: none;
+}
+
+/* Mobile video layer (hidden by default) */
+.video-layer-mobile {
+    display: none;
 }
 
 /* Transparent protective overlay */
@@ -493,14 +498,6 @@ footer {
     
     .main-page .video-layer-mobile {
         display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 2;
-        pointer-events: none;
     }
     
     .background-image {
