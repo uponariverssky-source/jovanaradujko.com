@@ -45,6 +45,13 @@ a {
     background-color: #060606;
 }
 
+.main-page h1,
+.main-page h2,
+.main-page h3,
+.main-page p:not(.nav-link) {
+    display: none;
+}
+
 /* Background Image Layer (bottom) */
 .background-image {
     position: fixed;
