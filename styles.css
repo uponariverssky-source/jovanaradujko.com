@@ -55,13 +55,6 @@ a {
     background-color: #060606;
 }
 
-.main-page h1,
-.main-page h2,
-.main-page h3,
-.main-page p:not(.nav-link) {
-    display: none;
-}
-
 /* Background Image Layer (bottom) */
 .background-image {
     position: fixed;
@@ -531,14 +524,16 @@ footer {
         font-size: 18px;
         gap: 20px;
         flex-wrap: wrap;
+        margin-bottom: 30px;
     }
     
     .secondary-nav {
         margin-left: 20px;
-        margin-top: 20px;
+        margin-top: 0;
         font-size: 14px;
         gap: 20px;
         flex-wrap: wrap;
+        margin-bottom: 40px;
     }
     
     /* MAIN PAGE - Swap videos on mobile */
@@ -612,7 +607,7 @@ footer {
     /* PROJECTS GRID - 1 column on mobile */
     .projects-container,
     .details-container {
-        margin-top: 20px;
+        margin-top: 0;
         padding-bottom: 40px;
     }
     
