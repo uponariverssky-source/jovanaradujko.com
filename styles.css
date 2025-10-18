@@ -36,6 +36,16 @@ a {
     color: inherit;
 }
 
+/* SEO-only content - invisible to users, visible to search engines */
+.seo-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* MAIN PAGE - LAYERED BACKGROUND */
 .main-page {
     position: relative;
