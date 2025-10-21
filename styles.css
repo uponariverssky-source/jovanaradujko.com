@@ -179,14 +179,14 @@ a {
 
 .about-text {
     width: 400px;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 48px;
+    line-height: 1.8;
 }
 
 .about-text-small {
-    font-size: 30px;
-    line-height: 1.6;
-    margin-top: 10px;
+    font-size: 28px;
+    line-height: 1.8;
+    font-weight: normal;
 }
 
 /* CONTACT PAGE */
