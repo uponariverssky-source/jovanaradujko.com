@@ -183,6 +183,12 @@ a {
     line-height: 1.6;
 }
 
+.about-text-small {
+    font-size: 7.5px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
 /* CONTACT PAGE */
 .contact-container {
     margin-left: calc(50% - 660px);
