@@ -197,17 +197,17 @@ a {
     line-height: 1.8;
 }
 
-.contact-text-small {
-    font-size: 28px;
-    line-height: 1.8;
-    font-weight: normal;
-}
-
 .contact-container p {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.contact-container .about-text-small {
+    font-size: 28px;
+    line-height: 1.8;
+    font-weight: normal;
 }
 
 .contact-link {
