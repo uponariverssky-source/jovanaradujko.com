@@ -92,5 +92,11 @@
             viewport.scrollTop = scrollTop - walkY;
         });
     </script>
+
+<script>
+  // Disable right-click (context menu) only for the map image
+  document.querySelector('.genex-viewport').addEventListener('contextmenu', e => e.preventDefault());
+</script>
+    
 </body>
 </html>
