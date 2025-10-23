@@ -700,3 +700,8 @@ footer {
         padding-bottom: 40px;
     }
 }
+
+/* --- Utility and global tweaks --- */
+a, a * {
+  cursor: pointer;
+}
