@@ -139,6 +139,12 @@
         <img src="../../assets/footer.jpg" alt="Signature of architect and artist Jovana Radujko" class="footer-signature">
     </footer>
 
+    <script>
+      document.addEventListener('contextmenu', e => {
+        if (e.target.tagName === 'IMG') e.preventDefault();
+      });
+    </script>
+
 
 </body>
 </html>
