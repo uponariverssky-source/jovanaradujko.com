@@ -706,3 +706,7 @@ footer {
         padding-bottom: 40px;
     }
 }
+
+a, a * {
+  cursor: pointer;
+}
