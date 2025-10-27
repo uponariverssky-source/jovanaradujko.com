@@ -271,6 +271,12 @@ a {
     padding-bottom: 60px;
 }
 
+/* For collabs pages without secondary nav - adjust to match positioning */
+.no-secondary-nav .projects-container,
+.no-secondary-nav .details-container {
+    margin-top: 72px;
+}
+
 .projects-grid,
 .details-grid {
     display: grid;
@@ -699,9 +705,4 @@ footer {
     body {
         padding-bottom: 40px;
     }
-}
-
-/* --- Utility and global tweaks --- */
-a, a * {
-  cursor: pointer;
 }
