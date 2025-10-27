@@ -272,9 +272,14 @@ a {
 }
 
 /* For collabs pages without secondary nav - adjust to match positioning */
+.no-secondary-nav .page-description {
+    margin-top: 36px;
+    margin-bottom: -15px;
+}
+
 .no-secondary-nav .projects-container,
 .no-secondary-nav .details-container {
-    margin-top: 72px;
+    margin-top: 36px;
 }
 
 .projects-grid,
