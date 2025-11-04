@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://jovanaradujko.com/</loc></url>
+  <url><loc>https://jovanaradujko.com/about.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects-all.html</loc></url>
+
+  <!-- Brutalism -->
+  <url><loc>https://jovanaradujko.com/projects/brutalism/index.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/brutalism/monuments.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/brutalism/non-residential.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/brutalism/residential.html</loc></url>
+
+  <!-- Maps -->
+  <url><loc>https://jovanaradujko.com/projects/maps/index.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/maps/details.html</loc></url>
+
+  <!-- Genex 360 -->
+  <url><loc>https://jovanaradujko.com/projects/genex360/index.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/genex360/details.html</loc></url>
+
+  <!-- Churches -->
+  <url><loc>https://jovanaradujko.com/projects/churches/index.html</loc></url>
+
+  <!-- Collaborations -->
+  <url><loc>https://jovanaradujko.com/projects/collabs/index.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/collabs/handm.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/collabs/marahome.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/collabs/codecentric.html</loc></url>
+  <url><loc>https://jovanaradujko.com/projects/collabs/ciklobar.html</loc></url>
+
+  <!-- Contact -->
+  <url><loc>https://jovanaradujko.com/contact.html</loc></url>
+</urlset>
