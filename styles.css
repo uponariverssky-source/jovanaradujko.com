@@ -323,7 +323,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 36px;
-    row-gap: 36px;
+    row-gap: 60px;
     width: 80%;
     max-width: 1400px;
     margin-left: auto;
@@ -350,9 +350,9 @@ a {
 
 .project-caption,
 .detail-caption {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
@@ -388,9 +388,9 @@ a {
 }
 
 .category-caption {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
