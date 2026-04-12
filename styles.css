@@ -323,7 +323,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 36px;
-    row-gap: 60px;
+    row-gap: 24px;
     width: 80%;
     max-width: 1400px;
     margin-left: auto;
