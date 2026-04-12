@@ -313,11 +313,6 @@ a {
     margin-bottom: 30px;
 }
 
-.no-secondary-nav .projects-container,
-.no-secondary-nav .details-container {
-    margin-top: 0;
-}
-
 .projects-grid,
 .details-grid {
     display: grid;
