@@ -1,108 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <link rel="icon" type="image/png" href="../../assets/images/jovana_radujko_favicon_JR.png">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#060606">
     <title>Map of New Belgrade – Jovana Radujko</title>
-
-<meta name="description" content="A hand-drawn map of New Belgrade by architect and artist Jovana Radujko, celebrating the geometry and rhythm of the city’s modernist architecture.">
-
-        <meta property="og:title" content="Jovana Radujko">
-<meta property="og:description" content="A hand-drawn map of New Belgrade by architect and artist Jovana Radujko, celebrating the geometry and rhythm of the city’s modernist architecture.">
-<meta property="og:image" content="https://jovanaradujko.com/assets/images/OG-image-jovana-radujko-maps.jpg">
-<meta property="og:url" content="https://jovanaradujko.com/projects/maps/details.html">
-<meta property="og:type" content="website">
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  "name": "Map of New Belgrade – Jovana Radujko",
-  "url": "https://jovanaradujko.com/projects/maps/index.html",
-  "description": "A hand-drawn map of New Belgrade by architect and artist Jovana Radujko, celebrating the geometry and rhythm of the city’s modernist architecture.",
-  "image": "https://jovanaradujko.com/assets/images/OG-image-jovana-radujko-maps.jpg",
-  "creator": {
-    "@type": "Person",
-    "name": "Jovana Radujko",
-    "url": "https://jovanaradujko.com/about.html",
-    "sameAs": [
-      "https://www.instagram.com/brutalizam_i_renesansa",
-      "https://www.instagram.com/jovanaradujko_com"
-    ]
-  },
-  "artMedium": "Ink on paper",
-  "artform": "Architectural drawing",
-  "genre": "City map, Modernist architecture, New Belgrade",
-  "hasPart": {
-    "@type": "VisualArtwork",
-    "name": "Map of New Belgrade – Details",
-    "url": "https://jovanaradujko.com/projects/maps/details.html"
-  },
-  "inLanguage": "en"
-}
-</script>
-
-    
+    <meta name="description" content="A hand-drawn map of New Belgrade by architect and artist Jovana Radujko, celebrating the geometry and rhythm of the city's modernist architecture.">
+    <meta property="og:title" content="Jovana Radujko">
+    <meta property="og:description" content="A hand-drawn map of New Belgrade by architect and artist Jovana Radujko, celebrating the geometry and rhythm of the city's modernist architecture.">
+    <meta property="og:image" content="https://jovanaradujko.com/assets/images/OG-image-jovana-radujko-maps.jpg">
+    <meta property="og:url" content="https://jovanaradujko.com/projects/maps/index.html">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body class="maps-page">
 
     <h1 class="seo-only">Hand-drawn Map of New Belgrade by Jovana Radujko</h1>
 
-    
-    <!-- Background Map Image -->
-  
-
-    <!-- Navigation -->
     <nav class="main-nav">
         <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
         <a href="../../about.html" class="nav-link">what i do</a>
         <a href="../../projects-all.html" class="nav-link active">projects</a>
-        <a href="../../projects/collabs/index.html" class="nav-link">collabs</a>
         <a href="../../contact.html" class="nav-link">contact</a>
     </nav>
 
-    <!-- Secondary Navigation -->
-    <nav class="secondary-nav">
-        <a href="../../projects-all.html" class="nav-link">all</a>
-        <a href="../brutalism/index.html" class="nav-link">brutalism</a>
-        <a href="index.html" class="nav-link active">maps</a>
-        <a href="../genex360/index.html" class="nav-link">genex 360</a>
-        <a href="../churches/index.html" class="nav-link">churches</a>
-    
-    </nav>
+    <a href="javascript:history.back()" class="back-button">&times;</a>
 
-    <!-- Page Description -->
     <div class="page-description">
         <p>Freehand axonometric drawing of New Belgrade.</p>
         <p class="genex-instructions">DRAG IMAGE TO EXPLORE <a href="details.html" class="genex-details-link">CLICK HERE FOR DETAILS</a></p>
     </div>
 
-    <!-- Genex Content -->
-    <div class="genex-content">        
-        <!-- Scrollable Image Container -->
+    <div class="genex-content">
         <div class="genex-viewport">
             <img src="../../assets/images/projects/maps/map_of_new_belgrade_jovana_radujko_brutalizam_i_renesansa_drawing.webp" alt="Map of New Belgrade drawing by Jovana Radujko" class="genex-panorama">
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
 
     <script>
-        // Pan functionality for the viewport
         const viewport = document.querySelector('.genex-viewport');
         let isDown = false;
-        let startX;
-        let startY;
-        let scrollLeft;
-        let scrollTop;
+        let startX, startY, scrollLeft, scrollTop;
 
         viewport.addEventListener('mousedown', (e) => {
             isDown = true;
@@ -111,31 +54,19 @@
             scrollLeft = viewport.scrollLeft;
             scrollTop = viewport.scrollTop;
         });
-
-        viewport.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
-
-        viewport.addEventListener('mouseup', () => {
-            isDown = false;
-        });
-
+        viewport.addEventListener('mouseleave', () => { isDown = false; });
+        viewport.addEventListener('mouseup', () => { isDown = false; });
         viewport.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
             const x = e.pageX - viewport.offsetLeft;
             const y = e.pageY - viewport.offsetTop;
-            const walkX = (x - startX);
-            const walkY = (y - startY);
-            viewport.scrollLeft = scrollLeft - walkX;
-            viewport.scrollTop = scrollTop - walkY;
+            viewport.scrollLeft = scrollLeft - (x - startX);
+            viewport.scrollTop = scrollTop - (y - startY);
         });
+
+        document.querySelector('.genex-viewport').addEventListener('contextmenu', e => e.preventDefault());
     </script>
 
-    <script>
-  // Disable right-click (context menu) only for the map image
-  document.querySelector('.genex-viewport').addEventListener('contextmenu', e => e.preventDefault());
-</script>
-    
 </body>
 </html>
