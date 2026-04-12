@@ -36,7 +36,7 @@ a {
     color: inherit;
 }
 
-/* SEO-only content - invisible to users, visible to search engines */
+/* SEO-only content */
 .seo-only {
     position: absolute;
     left: -10000px;
@@ -46,7 +46,74 @@ a {
     overflow: hidden;
 }
 
-/* MAIN PAGE - LAYERED BACKGROUND */
+/* ============================================
+   LAYOUT SYSTEM — shared grid container
+   All nav, grids, descriptions align to this
+   ============================================ */
+
+.layout-width {
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   NAVIGATION - Main Menu
+   ============================================ */
+.main-nav {
+    display: flex;
+    gap: 36px;
+    font-size: 20px;
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 36px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-bold {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #202020;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* SECONDARY MENU (kept in CSS in case needed, but hidden by default) */
+.secondary-nav {
+    display: flex;
+    gap: 28px;
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    font-size: 15px;
+}
+
+.secondary-nav .nav-link:hover {
+    color: #202020;
+}
+
+.secondary-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* ============================================
+   MAIN PAGE - LAYERED BACKGROUND
+   ============================================ */
 .main-page {
     position: relative;
     width: 100%;
@@ -55,7 +122,6 @@ a {
     background-color: #060606;
 }
 
-/* Background Image Layer (bottom) */
 .background-image {
     position: fixed;
     top: 0;
@@ -69,7 +135,6 @@ a {
     z-index: 1;
 }
 
-/* Video Effects Layer (on top of image) - DESKTOP */
 .video-layer {
     position: fixed;
     top: 0;
@@ -83,12 +148,10 @@ a {
     pointer-events: none;
 }
 
-/* Hide mobile video on desktop */
 .video-mobile {
     display: none;
 }
 
-/* Transparent protective overlay */
 .video-overlay {
     position: fixed;
     top: 0;
@@ -118,56 +181,16 @@ a {
     z-index: 1000;
 }
 
-/* NAVIGATION - Main Menu */
-.main-nav {
-    display: flex;
-    gap: 36px;
-    font-size: 20px;
-    margin-left: calc(50% - 660px);
-    padding-top: 36px;
-    padding-bottom: 0;
-    position: relative;
-    z-index: 100;
-}
-
-.nav-link {
-    transition: color 0.3s ease;
-}
-
-.nav-bold {
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    color: #202020;
-}
-
-.nav-link.active {
-    text-decoration: underline;
-}
-
-/* SECONDARY MENU (Projects categories) */
-.secondary-nav {
-    display: flex;
-    gap: 28px;
-    margin-left: calc(50% - 660px);
-    margin-top: 36px;
-    font-size: 15px;
-}
-
-.secondary-nav .nav-link:hover {
-    color: #202020;
-}
-
-.secondary-nav .nav-link.active {
-    text-decoration: underline;
-}
-
-/* ABOUT PAGE */
+/* ============================================
+   ABOUT PAGE
+   ============================================ */
 .about-container {
     display: flex;
     align-items: flex-start;
-    margin-left: calc(50% - 660px);
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 108px;
     gap: 60px;
 }
@@ -189,9 +212,14 @@ a {
     font-weight: normal;
 }
 
-/* CONTACT PAGE */
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
 .contact-container {
-    margin-left: calc(50% - 660px);
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 180px;
     font-size: 48px;
     line-height: 1.8;
@@ -233,7 +261,9 @@ a {
     opacity: 0.7;
 }
 
-/* BACK BUTTON (X) */
+/* ============================================
+   BACK BUTTON (X)
+   ============================================ */
 .back-button {
     position: fixed;
     top: 36px;
@@ -250,9 +280,14 @@ a {
     color: #202020;
 }
 
-/* PAGE DESCRIPTION */
+/* ============================================
+   PAGE DESCRIPTION
+   ============================================ */
 .page-description {
-    margin-left: calc(50% - 660px);
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 36px;
     margin-bottom: 24px;
 }
@@ -264,14 +299,15 @@ a {
     text-align: left;
 }
 
-/* PROJECTS GRID & DETAILS GRID */
+/* ============================================
+   PROJECTS GRID & DETAILS GRID
+   ============================================ */
 .projects-container,
 .details-container {
     margin-top: 36px;
     padding-bottom: 60px;
 }
 
-/* For collabs pages without secondary nav - adjust to match positioning */
 .no-secondary-nav .page-description {
     margin-top: 36px;
     margin-bottom: 30px;
@@ -285,11 +321,13 @@ a {
 .projects-grid,
 .details-grid {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    column-gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 36px;
     row-gap: 36px;
-    justify-content: center;
-    margin: 0 auto;
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: start;
 }
 
@@ -305,7 +343,7 @@ a {
 
 .project-image,
 .detail-image {
-    width: 400px;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -318,7 +356,7 @@ a {
     margin-bottom: 0;
 }
 
-/* Clickable detail items (for "see more" images) */
+/* Clickable detail items */
 .detail-item-clickable,
 .detail-item-clickable img {
     cursor: pointer;
@@ -328,7 +366,9 @@ a {
     opacity: 0.8;
 }
 
-/* CATEGORY ITEMS (for projects-all and brutalism index) */
+/* ============================================
+   CATEGORY ITEMS
+   ============================================ */
 .category-item {
     cursor: pointer;
     text-decoration: none;
@@ -337,7 +377,7 @@ a {
 }
 
 .category-image {
-    width: 400px;
+    width: 100%;
     height: auto;
     display: block;
     transition: opacity 0.3s ease;
@@ -354,7 +394,9 @@ a {
     margin-bottom: 0;
 }
 
-/* FOOTER */
+/* ============================================
+   FOOTER
+   ============================================ */
 footer {
     position: fixed;
     bottom: 0;
@@ -375,7 +417,9 @@ footer {
     display: block;
 }
 
-/* MAPS PAGE */
+/* ============================================
+   MAPS PAGE
+   ============================================ */
 .maps-page {
     position: relative;
     min-height: 100vh;
@@ -403,7 +447,10 @@ footer {
 }
 
 .maps-content {
-    margin-left: calc(50% - 660px);
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 108px;
     text-align: left;
 }
@@ -427,7 +474,9 @@ footer {
     color: #202020;
 }
 
-/* GENEX 360 PAGE */
+/* ============================================
+   GENEX 360 PAGE
+   ============================================ */
 .genex-page {
     position: relative;
     min-height: 100vh;
@@ -455,14 +504,17 @@ footer {
 }
 
 .genex-content {
-    margin-left: calc(50% - 660px);
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     text-align: left;
 }
 
-/* Scrollable Viewport for Panorama */
 .genex-viewport {
-    width: 400px;
+    width: 100%;
+    max-width: 600px;
     height: 530px;
     overflow: scroll;
     border: 1px solid #D3D3D3;
@@ -470,7 +522,6 @@ footer {
     scrollbar-color: #060606 #060606;
 }
 
-/* Style scrollbar for webkit browsers (Chrome, Safari, Edge) */
 .genex-viewport::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -524,8 +575,7 @@ footer {
    ============================================ */
 
 @media screen and (max-width: 768px) {
-    
-    /* Fix mobile scrolling on main page */
+
     .main-page {
         position: fixed;
         overflow: hidden;
@@ -533,7 +583,7 @@ footer {
         height: 100vh;
         height: 100dvh;
     }
-    
+
     html.main-page-html,
     body.main-page {
         overflow: hidden;
@@ -542,31 +592,39 @@ footer {
         height: 100vh;
         height: 100dvh;
     }
-    
+
     /* NAVIGATION */
     .main-nav {
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 20px;
         font-size: 18px;
         gap: 20px;
         flex-wrap: wrap;
         margin-bottom: 30px;
     }
-    
+
     .secondary-nav {
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-top: 0;
         font-size: 14px;
         gap: 20px;
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
-    
+
     /* MAIN PAGE - Swap videos on mobile */
     .video-desktop {
         display: none !important;
     }
-    
+
     .video-mobile {
         display: block !important;
         position: fixed;
@@ -578,80 +636,71 @@ footer {
         max-width: 100%;
         object-fit: contain;
     }
-    
-    .background-image {
-        background-size: cover;
-        background-position: center;
-    }
-    
+
     /* ABOUT PAGE */
     .about-container {
         flex-direction: column;
-        margin-left: 20px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 60px;
         gap: 30px;
     }
-    
+
     .about-photo {
         width: 100%;
         max-width: 400px;
     }
-    
+
     .about-text {
         width: 100%;
         max-width: 400px;
-        padding-right: 20px;
     }
-    
+
     /* CONTACT PAGE */
     .contact-container {
-        margin-left: 20px;
-        padding-top: 100px;
+        width: 100%;
+        padding-left: 20px;
         padding-right: 20px;
+        padding-top: 100px;
         font-size: 32px;
     }
-    
+
     /* BACK BUTTON */
     .back-button {
         right: 20px;
         top: 20px;
         font-size: 50px;
     }
-    
+
     /* PAGE DESCRIPTION */
     .page-description {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
+
     .page-description p {
         font-size: 14px;
     }
-    
+
     /* PROJECTS GRID - 1 column on mobile */
     .projects-container,
     .details-container {
         margin-top: 0;
         padding-bottom: 40px;
     }
-    
+
     .projects-grid,
     .details-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+        width: 100%;
         padding: 0 20px;
     }
-    
-    .project-image,
-    .detail-image,
-    .category-image {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
+
     .project-item,
     .project-item-static,
     .detail-item,
@@ -660,58 +709,60 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+
     /* MAPS PAGE */
     .maps-content {
-        margin-left: 20px;
-        padding-top: 60px;
+        width: 100%;
+        padding-left: 20px;
         padding-right: 20px;
+        padding-top: 60px;
     }
-    
+
     .maps-title {
         font-size: 32px;
         margin-bottom: 20px;
     }
-    
+
     .maps-link {
         font-size: 18px;
     }
-    
+
     /* GENEX 360 PAGE */
     .genex-content {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    
+
     .genex-viewport {
         width: 100%;
         max-width: 400px;
         height: 530px;
     }
-    
+
     .genex-instructions {
         margin-top: 8px;
     }
-    
+
     .genex-details-link {
         font-size: 18px;
         margin-left: 10px;
     }
-    
+
     /* FOOTER */
     footer {
         height: 30px;
     }
-    
+
     .footer-signature {
         height: 24px;
     }
-    
+
     body {
         padding-bottom: 40px;
     }
 }
 
 a, a * {
-  cursor: pointer;
+    cursor: pointer;
 }
