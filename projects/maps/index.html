@@ -28,45 +28,16 @@
     <a href="javascript:history.back()" class="back-button">&times;</a>
 
     <div class="page-description">
-        <p>Freehand axonometric drawing of New Belgrade.</p>
-        <p class="genex-instructions">DRAG IMAGE TO EXPLORE <a href="details.html" class="genex-details-link">CLICK HERE FOR DETAILS</a></p>
+        <p>Freehand axonometric drawing of New Belgrade. Scroll and zoom to explore. <a href="details.html" class="genex-details-link">CLICK HERE FOR DETAILS</a></p>
     </div>
 
     <div class="genex-content">
-        <div class="genex-viewport">
-            <img src="../../assets/images/projects/maps/map_of_new_belgrade_jovana_radujko_brutalizam_i_renesansa_drawing.webp" alt="Map of New Belgrade drawing by Jovana Radujko" class="genex-panorama">
-        </div>
+        <script src="https://zoomhub.net/eDwrj.js?width=auto&height=auto&border=none"></script>
     </div>
 
     <footer>
         <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
     </footer>
-
-    <script>
-        const viewport = document.querySelector('.genex-viewport');
-        let isDown = false;
-        let startX, startY, scrollLeft, scrollTop;
-
-        viewport.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.pageX - viewport.offsetLeft;
-            startY = e.pageY - viewport.offsetTop;
-            scrollLeft = viewport.scrollLeft;
-            scrollTop = viewport.scrollTop;
-        });
-        viewport.addEventListener('mouseleave', () => { isDown = false; });
-        viewport.addEventListener('mouseup', () => { isDown = false; });
-        viewport.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - viewport.offsetLeft;
-            const y = e.pageY - viewport.offsetTop;
-            viewport.scrollLeft = scrollLeft - (x - startX);
-            viewport.scrollTop = scrollTop - (y - startY);
-        });
-
-        document.querySelector('.genex-viewport').addEventListener('contextmenu', e => e.preventDefault());
-    </script>
 
 </body>
 </html>
