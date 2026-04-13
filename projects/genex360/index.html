@@ -6,67 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#060606">
     <title>Belgrade 360: Panorama from the Western City Gate – Jovana Radujko</title>
-    <meta name="description" content="Hand-drawn 360° view of Belgrade from the top of Genex Tower by Jovana Radujko.">
-    <meta property="og:title" content="Jovana Radujko">
-    <meta property="og:description" content="Hand-drawn 360° view of Belgrade from the top of Genex Tower by Jovana Radujko.">
+    <meta name="description" content="A hand-drawn 360° panorama of Belgrade from the top of Genex Tower (Western City Gate) by Jovana Radujko. An immersive study of the New Belgrade skyline, ink on paper and digital.">
+    <meta name="keywords" content="Jovana Radujko, Belgrade 360, Genex Tower, Western City Gate, panorama, New Belgrade, hand-drawn, architectural illustration, brutalizam i renesansa">
+    <meta property="og:title" content="Belgrade 360: Panorama from the Western City Gate – Jovana Radujko">
+    <meta property="og:description" content="A hand-drawn 360° panorama of Belgrade from the top of Genex Tower by Jovana Radujko. An immersive study of the New Belgrade skyline.">
     <meta property="og:image" content="https://jovanaradujko.com/assets/images/OG-image-jovana-radujko-genex360.jpg">
     <meta property="og:url" content="https://jovanaradujko.com/projects/genex360/index.html">
     <meta property="og:type" content="website">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Belgrade 360: Panorama from the Western City Gate – Jovana Radujko",
+  "url": "https://jovanaradujko.com/projects/genex360/index.html",
+  "description": "A hand-drawn 360° panorama of Belgrade from the top of Genex Tower by Jovana Radujko. An immersive study of the New Belgrade skyline.",
+  "image": "https://jovanaradujko.com/assets/images/OG-image-jovana-radujko-genex360.jpg",
+  "creator": { "@type": "Person", "name": "Jovana Radujko", "url": "https://jovanaradujko.com/about.html" },
+  "artMedium": "Ink on paper, digital", "artform": "Architectural illustration", "inLanguage": "en"
+}
+</script>
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body class="genex-page">
-
-    <h1 class="seo-only">Genex Tower – 360° Hand-drawn View of Belgrade by Jovana Radujko</h1>
-
+    <h1 class="seo-only">Belgrade 360: Hand-drawn Panorama from Genex Tower by Jovana Radujko</h1>
     <nav class="main-nav">
         <a href="../../index.html" class="nav-link nav-bold">jovana radujko</a>
         <a href="../../about.html" class="nav-link">what i do</a>
         <a href="../../projects-all.html" class="nav-link active">projects</a>
         <a href="../../contact.html" class="nav-link">contact</a>
     </nav>
-
     <a href="javascript:history.back()" class="back-button">&times;</a>
-
     <div class="page-description">
         <p>IN PROGRESS / 360° view of Belgrade from the top of Genex tower.</p>
         <p class="genex-instructions">DRAG IMAGE TO EXPLORE <a href="details.html" class="genex-details-link">CLICK HERE FOR DETAILS</a></p>
     </div>
-
     <div class="genex-content">
         <div class="genex-viewport">
-            <img src="../../assets/images/projects/genex360/genex360_jovana_radujko_brutalizam_i_renesansa_new_belgrade.webp" alt="360 view from Western city Gate Belgrade drawing by Jovana Radujko" class="genex-panorama">
+            <img src="../../assets/images/projects/genex360/genex360_jovana_radujko_brutalizam_i_renesansa_new_belgrade.webp" alt="360° hand-drawn panorama of Belgrade from Genex Tower by Jovana Radujko" class="genex-panorama">
         </div>
     </div>
-
-    <footer>
-        <img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
-    </footer>
-
+    <footer><img src="../../assets/footer.jpg" alt="Jovana Radujko" class="footer-signature"></footer>
     <script>
         const viewport = document.querySelector('.genex-viewport');
         let isDown = false;
         let startX, startY, scrollLeft, scrollTop;
-
-        viewport.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.pageX - viewport.offsetLeft;
-            startY = e.pageY - viewport.offsetTop;
-            scrollLeft = viewport.scrollLeft;
-            scrollTop = viewport.scrollTop;
-        });
+        viewport.addEventListener('mousedown', (e) => { isDown = true; startX = e.pageX - viewport.offsetLeft; startY = e.pageY - viewport.offsetTop; scrollLeft = viewport.scrollLeft; scrollTop = viewport.scrollTop; });
         viewport.addEventListener('mouseleave', () => { isDown = false; });
         viewport.addEventListener('mouseup', () => { isDown = false; });
-        viewport.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - viewport.offsetLeft;
-            const y = e.pageY - viewport.offsetTop;
-            viewport.scrollLeft = scrollLeft - (x - startX);
-            viewport.scrollTop = scrollTop - (y - startY);
-        });
-
+        viewport.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); viewport.scrollLeft = scrollLeft - (e.pageX - viewport.offsetLeft - startX); viewport.scrollTop = scrollTop - (e.pageY - viewport.offsetTop - startY); });
         document.querySelector('.genex-viewport').addEventListener('contextmenu', e => e.preventDefault());
     </script>
-
 </body>
 </html>
