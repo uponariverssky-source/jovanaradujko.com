@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="assets/images/jovana_radujko_favicon_JR.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#060606">
+    
     <title>About – Jovana Radujko, Architect and Illustrator</title>
-    <meta name="description" content="Jovana Radujko is an architect and illustrator from New Belgrade. She creates hand-drawn illustrations that translate the atmosphere of brutalist and modernist architecture into visual narratives.">
-    <meta name="keywords" content="Jovana Radujko, architect, illustrator, Belgrade, brutalism, hand-drawn illustration, architectural drawing, commission">
+    <meta name="description" content="Jovana Radujko is an architect and visual artist from Belgrade. Her practice spans interior architecture, visual identity design, and architectural artwork.">
+    <meta name="keywords" content="Jovana Radujko, architect, illustrator, Belgrade, brutalism, Brutalizam i renesansa, architectural drawing, interior architecture">
+    <link rel="canonical" href="https://jovanaradujko.com/about.html">
+    <link rel="icon" type="image/png" href="assets/images/jovana_radujko_favicon_JR.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
     <meta property="og:title" content="About – Jovana Radujko, Architect and Illustrator">
-    <meta property="og:description" content="Architect and illustrator from New Belgrade creating hand-drawn atmospheric illustrations. Available for creative collaborations.">
+    <meta property="og:description" content="Architect and visual artist operating at the intersection of architecture, visual systems, and fine art. Founder of Brutalizam i renesansa.">
     <meta property="og:image" content="https://jovanaradujko.com/assets/images/OG-image-jovana-radujko.jpg">
     <meta property="og:url" content="https://jovanaradujko.com/about.html">
-    <meta property="og:type" content="website">
+
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Jovana Radujko",
-  "url": "https://jovanaradujko.com/about.html",
-  "image": "https://jovanaradujko.com/assets/images/OG-image-jovana-radujko.jpg",
-  "jobTitle": "Architect and Visual Artist",
-  "description": "Jovana Radujko operates at the intersection of architecture, visual systems, and fine art, exploring atmosphere as the essential identity of space.",
-  "address": { "@type": "PostalAddress", "addressLocality": "Belgrade", "addressCountry": "RS" },
-  "email": "contact@jovanaradujko.com",
-  "sameAs": [
-    "https://www.instagram.com/jovanaradujkocom,
-    "https://www.behance.net/jovanaradujko"
-  ]
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://jovanaradujko.com/about.html",
+          "url": "https://jovanaradujko.com/about.html",
+          "name": "About – Jovana Radujko",
+          "inLanguage": "en",
+          "mainEntity": {
+            "@type": "Person",
+            "@id": "https://jovanaradujko.com/#person",
+            "name": "Jovana Radujko",
+            "jobTitle": "Architect and Visual Artist",
+            "description": "Jovana Radujko operates at the intersection of architecture, visual systems, and fine art, exploring atmosphere as the essential identity of space.",
+            "url": "https://jovanaradujko.com",
+            "image": "https://jovanaradujko.com/assets/images/OG-image-jovana-radujko.jpg",
+            "email": "contact@jovanaradujko.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Belgrade",
+              "addressCountry": "RS"
+            },
+            "knowsAbout": [
+              "Architecture",
+              "Interior Architecture",
+              "Visual Identity Design",
+              "Architectural Illustration",
+              "Brutalism"
+            ],
+            "sameAs": [
+              "https://www.instagram.com/jovanaradujkocom/",
+              "https://www.behance.net/jovanaradujko"
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 class="seo-only">Jovana Radujko – Architect and Artist from Belgrade</h1>
+    
     <nav class="main-nav">
         <a href="index.html" class="nav-link nav-bold">jovana radujko</a>
         <a href="about.html" class="nav-link active">about</a>
         <a href="projects-all.html" class="nav-link">projects</a>
         <a href="contact.html" class="nav-link">contact</a>
     </nav>
-    <div class="about-container">
+    
+    <main class="about-container">
         <div>
-            
             <p class="about-text">I make things that feel good to look at.</p>
-<p class="about-text-small">I operate at the intersection of architecture, visual systems and fine art.</p>
-​<p class="about-text-small">With a Master degree specialized in Interior Architecture, my background
-    <br>spans spatial environments, visual identity design, and digital media.</br></p>
-​<p class="about-text-small">Rather than treating these fields as separate, I focus on their synergy.
-    <br>My most extensive project, <i>Brutalizam i renesansa</i> (2018 - present), embodies this multi-faceted mindset,
-    <br>combining the structural rigor of architecture, the clarity of graphic design, and the tactile depth of visual art.</br></p>
-<p class="about-text-small">My core focus is atmosphere as the primary identity of space.</p>
+            <p class="about-text-small">I operate at the intersection of architecture, visual systems and fine art.</p>
+            <p class="about-text-small">With a Master degree specialized in Interior Architecture, my background<br>spans spatial environments, visual identity design, and digital media.</p>
+            <p class="about-text-small">Rather than treating these fields as separate, I focus on their synergy.<br>My most extensive project, <i>Brutalizam i renesansa</i> (2018 - present), embodies this multi-faceted mindset,<br>combining the structural rigor of architecture, the clarity of graphic design, and the tactile depth of visual art.</p>
+            <p class="about-text-small">My core focus is atmosphere as the primary identity of space.</p>
         </div>
-    </div>
+    </main>
+
     <footer>
-        <img src="assets/footer.jpg" alt="Jovana Radujko" class="footer-signature">
+        <img src="assets/footer.jpg" alt="Jovana Radujko Signature" class="footer-signature">
     </footer>
 </body>
 </html>
